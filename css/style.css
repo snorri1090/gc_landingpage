@@ -23,7 +23,22 @@
     .landing-page section h1 {
       text-align: center; }
     .landing-page section.splash {
-      background: #999; }
+      background: #999;
+      padding: 0; }
+      .landing-page section.splash .logo-panel {
+        width: 25%;
+        min-width: 300px;
+        position: absolute;
+        left: 10px; }
+        .landing-page section.splash .logo-panel img {
+          width: 100%; }
+      .landing-page section.splash .bg-video {
+        height: 100%;
+        margin: 0;
+        padding: 0; }
+      .landing-page section.splash .bg-video video {
+        min-width: 100%;
+        min-height: 100%; }
     .landing-page section.games {
       background: orange; }
     .landing-page section.more {

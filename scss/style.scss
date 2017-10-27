@@ -30,6 +30,29 @@
 
     &.splash {
       background: #999;
+      padding: 0;
+
+      .logo-panel {
+        width: 25%;
+        min-width: 300px;
+        position: absolute;
+        left: 10px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .bg-video {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .bg-video video {
+        min-width: 100%;
+        min-height: 100%;
+      }
     }
     &.games {
       background: orange;
