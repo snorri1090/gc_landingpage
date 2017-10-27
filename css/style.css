@@ -1,0 +1,46 @@
+.topnav-fpo {
+  height: 40px;
+  background-color: #000;
+  margin: 0;
+  width: 100vw;
+  padding: 0; }
+
+.landing-page {
+  margin: 0;
+  width: 100vw;
+  padding: 0;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  line-height: 26.4px; }
+  .landing-page section {
+    width: 100%;
+    padding: 10px;
+    min-height: 500px;
+    display: block; }
+    .landing-page section h1 {
+      text-align: center; }
+    .landing-page section.splash {
+      background: #999; }
+    .landing-page section.games {
+      background: orange; }
+    .landing-page section.more {
+      background: orange; }
+    .landing-page section.exhibit {
+      background: orange; }
+    .landing-page section.other {
+      background: orange; }
+    .landing-page section.how-to-play {
+      background: #999; }
+    .landing-page section.alt-play {
+      background: #999; }
+    .landing-page section.sponsor {
+      background-color: #fff;
+      min-height: 150px; }
+  .landing-page footer#landing-page-footer {
+    background: #000;
+    min-height: 300px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,68 @@
+//topnav ftp: remove before integration
+.topnav-fpo {
+  height: 40px;
+  background-color: #000;
+  margin: 0;
+  width: 100vw;
+  padding: 0;
+}
+
+.landing-page {
+  margin: 0;
+  width: 100vw;
+  padding: 0;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: lighter;
+	line-height: 26.4px;
+
+  section {
+    width: 100%;
+    padding: 10px;
+    min-height: 500px;
+    display: block;
+
+    h1 {
+      text-align: center;
+    }
+
+    &.splash {
+      background: #999;
+    }
+    &.games {
+      background: orange;
+    }
+
+    &.more {
+      background: orange;
+    }
+
+    &.exhibit {
+      background: orange;
+    }
+
+    &.other {
+      background: orange;
+    }
+
+    &.how-to-play {
+      background: #999;
+    }
+
+    &.alt-play {
+      background: #999;
+    }
+
+    &.sponsor {
+      background-color: #fff;
+      min-height: 150px;
+    }
+  }
+
+  footer#landing-page-footer {
+    background: #000;
+    min-height: 300px;
+  }
+}
