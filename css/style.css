@@ -1,61 +1,177 @@
 .topnav-fpo {
-  height: 40px;
   background-color: #000;
+  height: 40px;
   margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
   width: 100vw;
-  padding: 0; }
+  z-index: 1; }
 
+@font-face {
+  font-family: 'proxima_nova_altblack';
+  src: url("../fonts/Proxima Nova Alt Black-webfont.eot");
+  src: url("../fonts/Proxima Nova Alt Black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova Alt Black-webfont.woff2") format("woff2"), url("../fonts/Proxima Nova Alt Black-webfont.woff") format("woff"), url("../fonts/Proxima Nova Alt Black-webfont.ttf") format("truetype"), url("../fonts/Proxima Nova Alt Black-webfont.svg#proxima_nova_altblack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_nova_altbold';
+  src: url("../fonts/Proxima Nova Alt Bold-webfont.eot");
+  src: url("../fonts/Proxima Nova Alt Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova Alt Bold-webfont.woff2") format("woff2"), url("../fonts/Proxima Nova Alt Bold-webfont.woff") format("woff"), url("../fonts/Proxima Nova Alt Bold-webfont.ttf") format("truetype"), url("../fonts/Proxima Nova Alt Bold-webfont.svg#proxima_nova_altbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/Proxima Nova Alt Regular-webfont.eot");
+  src: url("../fonts/Proxima Nova Alt Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova Alt Regular-webfont.woff2") format("woff2"), url("../fonts/Proxima Nova Alt Regular-webfont.woff") format("woff"), url("../fonts/Proxima Nova Alt Regular-webfont.ttf") format("truetype"), url("../fonts/Proxima Nova Alt Regular-webfont.svg#proxima_nova_altregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_nova_scosfthin';
+  src: url("../fonts/Proxima Nova ScOsf Thin-webfont.eot");
+  src: url("../fonts/Proxima Nova ScOsf Thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova ScOsf Thin-webfont.woff2") format("woff2"), url("../fonts/Proxima Nova ScOsf Thin-webfont.woff") format("woff"), url("../fonts/Proxima Nova ScOsf Thin-webfont.ttf") format("truetype"), url("../fonts/Proxima Nova ScOsf Thin-webfont.svg#proxima_nova_scosfthin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_nova_ltsemibold';
+  src: url("../fonts/Proxima Nova Semibold-webfont.eot");
+  src: url("../fonts/Proxima Nova Semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova Semibold-webfont.woff2") format("woff2"), url("../fonts/Proxima Nova Semibold-webfont.woff") format("woff"), url("../fonts/Proxima Nova Semibold-webfont.ttf") format("truetype"), url("../fonts/Proxima Nova Semibold-webfont.svg#proxima_nova_ltsemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_nova_ltthin';
+  src: url("../fonts/Proxima Nova Thin-webfont.eot");
+  src: url("../fonts/Proxima Nova Thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova Thin-webfont.woff2") format("woff2"), url("../fonts/Proxima Nova Thin-webfont.woff") format("woff"), url("../fonts/Proxima Nova Thin-webfont.ttf") format("truetype"), url("../fonts/Proxima Nova Thin-webfont.svg#proxima_nova_ltthin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*****************************************************
+New css variables
+*****************************************************/
+/*****************************************************
+Landing Page styling
+*****************************************************/
 .landing-page {
   margin: 0;
   width: 100vw;
-  padding: 0; }
+  padding: 0;
+  font-family: proxima_nova_ltthin, Tahoma, sans-serif; }
   .landing-page section {
     width: 100%;
     padding: 10px;
-    display: block; }
+    display: block;
+    position: relative; }
     .landing-page section h1,
     .landing-page section h2 {
       text-align: center;
-      font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
       font-style: normal;
       font-variant: normal;
-      font-weight: lighter;
-      line-height: 0; }
+      font-weight: normal;
+      margin-left: 10%;
+      margin-right: 10%; }
     .landing-page section h1 {
-      font-size: 35px; }
+      font-family: Oxford, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+      font-size: 4em;
+      font-weight: 100;
+      position: relative;
+      top: -0.2em; }
     .landing-page section h2 {
-      font-size: 18px; }
-    .landing-page section.card {
+      font-family: proxima_nova_ltthin, Tahoma, sans-serif;
+      font-size: 18px;
+      font-weight: 100;
+      letter-spacing: .03em;
+      opacity: 0.7;
+      position: relative;
+      top: -2em; }
+    .landing-page section p {
+      color: #fff;
+      font-family: proxima_nova_ltthin, Tahoma, sans-serif;
+      font-size: 18px;
+      font-weight: lighter;
+      letter-spacing: .03em;
+      opacity: 0.7;
+      position: relative; }
+      .landing-page section p strong {
+        font-weight: 700; }
+    .landing-page section.cards {
       background-color: #471008;
-      background-image: url("/images/red-cloud-bg-dk.jpg");
+      background-image: url("../images/red-cloud-bg-dk.jpg");
       background-size: 100%;
       background-position-y: -600px;
       background-repeat: no-repeat; }
-      .landing-page section.card h1,
-      .landing-page section.card h2 {
+      .landing-page section.cards h1,
+      .landing-page section.cards h2 {
         color: #fff; }
     .landing-page section.splash {
       background: #999;
       padding: 0;
-      margin-bottom: -5px; }
+      margin-bottom: -5px;
+      min-height: 500px; }
       .landing-page section.splash .logo-panel {
-        width: 25%;
+        max-width: 420px;
         min-width: 300px;
         position: absolute;
-        left: 10px; }
+        top: 50px;
+        width: 25%;
+        z-index: 1; }
         .landing-page section.splash .logo-panel img {
           width: 100%; }
       .landing-page section.splash .bg-video {
-        height: 100%;
+        height: 550px;
         margin: 0;
-        padding: 0; }
-      .landing-page section.splash .bg-video video {
-        min-width: 100%;
-        min-height: 100%; }
+        padding: 0;
+        top: 0;
+        left: 0; }
+        .landing-page section.splash .bg-video video {
+          min-width: 100%;
+          min-height: 550px;
+          z-index: 0;
+          position: relative;
+          top: -300px; }
     .landing-page section.how-to-play {
-      background: #999; }
+      background: #000;
+      color: #fff;
+      background-image: url("../images/htp-gameboard-bg.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 200px;
+      min-height: 700px; }
+      .landing-page section.how-to-play h1 {
+        color: #fff; }
+      .landing-page section.how-to-play .row .columns h1 {
+        font-family: proxima_nova_altblack, Tahoma, sans-serif;
+        font-size: 72px;
+        margin: 0;
+        line-height: 0;
+        padding: 0;
+        float: left; }
+      .landing-page section.how-to-play .row .columns h2 {
+        font-family: proxima_nova_ltthin, Tahoma, sans-serif;
+        font-size: 26px;
+        margin: 0;
+        line-height: 1;
+        padding: 0;
+        float: left;
+        margin: .5em 0 0 2em;
+        color: white;
+        text-align: left; }
+      .landing-page section.how-to-play .row.descriptions {
+        position: relative;
+        top: 270px; }
+        .landing-page section.how-to-play .row.descriptions .columns {
+          color: #000;
+          font-size: 20px; }
+      .landing-page section.how-to-play .row.buttons {
+        position: relative;
+        top: 300px; }
+        .landing-page section.how-to-play .row.buttons .columns {
+          color: #fff;
+          font-size: 16px;
+          text-align: center; }
     .landing-page section.alt-play {
-      background: #999; }
+      background: #000;
+      color: #fff; }
+      .landing-page section.alt-play h1 {
+        color: #fff; }
     .landing-page section.sponsor {
       background-color: #fff;
       min-height: 150px; }
@@ -64,11 +180,74 @@
         padding: 10px;
         text-align: center;
         width: 100%; }
+        .landing-page section.sponsor .sponsor-logos img {
+          margin: 5px 10px; }
+      .landing-page section.sponsor h1 {
+        font-family: proxima_nova_ltthin, Tahoma, sans-serif;
+        font-size: 1.25em;
+        color: #a4a0a0; }
     .landing-page section .card-grid {
-      display: flex;
-      flex-direction: row; }
+      margin: 0 auto;
+      text-align: center; }
+      .landing-page section .card-grid .card {
+        background-color: black;
+        border-radius: 7px;
+        display: inline-block;
+        margin: 10px; }
+        .landing-page section .card-grid .card.portrait {
+          width: 156px;
+          height: 235px; }
+        .landing-page section .card-grid .card.landscape {
+          width: 235px;
+          height: 156px; }
   .landing-page footer#landing-page-footer {
     background: #000;
-    min-height: 300px; }
+    min-height: 300px;
+    color: white;
+    font-family: proxima_nova_ltthin, Tahoma, sans-serif; }
+    .landing-page footer#landing-page-footer .site-map {
+      margin: 0;
+      width: 100%;
+      margin: 0 auto; }
+      .landing-page footer#landing-page-footer .site-map .site-area {
+        width: 19%;
+        float: left; }
+        .landing-page footer#landing-page-footer .site-map .site-area:first-child {
+          margin-left: 20px; }
+        .landing-page footer#landing-page-footer .site-map .site-area h2 {
+          font-size: 30px;
+          text-transform: uppercase;
+          margin-bottom: -0.3em; }
+        .landing-page footer#landing-page-footer .site-map .site-area ul {
+          list-style: none;
+          padding-left: 0; }
+        .landing-page footer#landing-page-footer .site-map .site-area ul li {
+          font-size: 13px; }
+
+/*****************************************************
+Helper classes to be replaced with Gen Con classes
+*****************************************************/
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
 
 /*# sourceMappingURL=style.css.map */

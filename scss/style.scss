@@ -1,47 +1,89 @@
 //topnav ftp: remove before integration
 .topnav-fpo {
-  height: 40px;
   background-color: #000;
+  height: 40px;
   margin: 0;
-  width: 100vw;
   padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
 }
+
+// import scss
+@import "fonts";
+
+/*****************************************************
+New css variables
+*****************************************************/
+$section-heading:   Oxford, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+$sub-text:          proxima_nova_ltthin, Tahoma, sans-serif;
+$sub-text-black:    proxima_nova_altblack, Tahoma, sans-serif;
+
+/*****************************************************
+Landing Page styling
+*****************************************************/
 
 .landing-page {
   margin: 0;
   width: 100vw;
   padding: 0;
+  font-family: $sub-text;
 
   section {
     width: 100%;
     padding: 10px;
     display: block;
+    position: relative;
 
     h1,
     h2 {
       text-align: center;
-      font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
       font-style: normal;
       font-variant: normal;
-      font-weight: lighter;
-      line-height: 0;
+      font-weight: normal;
+      margin-left: 10%;
+      margin-right: 10%;
     }
 
     h1 {
-      font-size: 35px;
+      font-family: $section-heading;
+      font-size: 4em;
+      font-weight: 100;
+      position: relative;
+      top: -0.2em;
     }
 
     h2 {
+      font-family: $sub-text;
       font-size: 18px;
+      font-weight: 100;
+      letter-spacing: .03em;
+      opacity: 0.7;
+      position: relative;
+      top: -2em;
     }
 
-    &.card {
+    p {
+      color: #fff;
+      font-family: $sub-text;
+      font-size: 18px;
+      font-weight: lighter;
+      letter-spacing: .03em;
+      opacity: 0.7;
+      position: relative;
+      strong {
+        font-weight: 700;
+      }
+    }
+
+    &.cards {
       background-color: #471008;
-      background-image: url("/images/red-cloud-bg-dk.jpg");
+      background-image: url("../images/red-cloud-bg-dk.jpg");
       background-size: 100%;
       background-position-y: -600px;
       background-repeat: no-repeat;
-      
+
       h1,
       h2 {
         color: #fff;
@@ -52,12 +94,15 @@
       background: #999;
       padding: 0;
       margin-bottom: -5px;
+      min-height: 500px;
 
       .logo-panel {
-        width: 25%;
+        max-width: 420px;
         min-width: 300px;
         position: absolute;
-        left: 10px;
+        top: 50px;
+        width: 25%;
+        z-index: 1;
 
         img {
           width: 100%;
@@ -65,15 +110,21 @@
       }
 
       .bg-video {
-        height: 100%;
+        height: 550px;
         margin: 0;
         padding: 0;
+        top: 0;
+        left: 0;
+
+        video {
+          min-width: 100%;
+          min-height: 550px;
+          z-index: 0;
+          position: relative;
+          top: -300px;
+        }
       }
 
-      .bg-video video {
-        min-width: 100%;
-        min-height: 100%;
-      }
     }
     &.games {
     }
@@ -88,11 +139,67 @@
     }
 
     &.how-to-play {
-      background: #999;
+      background: #000;
+      color: #fff;
+      background-image: url('../images/htp-gameboard-bg.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 200px;
+      min-height: 700px;
+
+      h1 {
+        color: #fff;
+      }
+
+      .row .columns h1 {
+        font-family: $sub-text-black;
+        font-size: 72px;
+        margin: 0;
+        line-height: 0;
+        padding: 0;
+        float: left;
+      }
+      .row .columns h2 {
+        font-family: $sub-text;
+        font-size: 26px;
+        margin: 0;
+        line-height: 1;
+        padding: 0;
+        float: left;
+        margin: .5em 0 0 2em;
+        color: white;
+        text-align: left;
+      }
+
+      .row.descriptions {
+        position: relative;
+        top: 270px;
+
+        .columns {
+          color: #000;
+          font-size: 20px;
+        }
+      }
+
+      .row.buttons {
+        position: relative;
+        top: 300px;
+
+        .columns {
+          color: #fff;
+          font-size: 16px;
+          text-align: center;
+        }
+      }
     }
 
     &.alt-play {
-      background: #999;
+      background: #000;
+      color: #fff;
+
+      h1 {
+        color: #fff;
+      }
     }
 
     &.sponsor {
@@ -104,17 +211,106 @@
         padding: 10px;
         text-align: center;
         width: 100%;
+
+        img {
+          margin: 5px 10px;
+        }
+      }
+
+      h1 {
+        font-family: $sub-text;
+        font-size: 1.25em;
+        color: #a4a0a0;
       }
     }
 
     .card-grid {
-      display: flex;
-      flex-direction: row;
+      margin: 0 auto;
+      text-align: center;
+
+      .card {
+        background-color: black; //temp color
+        border-radius: 7px;
+        display: inline-block;
+        margin: 10px;
+        &.portrait {
+          width: 156px;
+          height: 235px;
+        }
+        &.landscape {
+          width: 235px;
+          height: 156px;
+        }
+      }
     }
+
   }
 
   footer#landing-page-footer {
     background: #000;
     min-height: 300px;
+    color: white;
+    font-family: $sub-text;
+
+    .site-map {
+      margin: 0;
+      width: 100%;
+      margin: 0 auto;
+
+      .site-area {
+        width: 19%;
+        float: left;
+        &:first-child {
+          margin-left: 20px;
+        }
+
+        h2 {
+          font-size: 30px;
+          text-transform: uppercase;
+          margin-bottom: -0.3em;
+        }
+        ul {
+          list-style: none;
+          padding-left: 0;
+        }
+        ul li {
+          font-size: 13px;
+        }
+      }
+    }
   }
+}
+
+
+/*****************************************************
+Helper classes to be replaced with Gen Con classes
+*****************************************************/
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
