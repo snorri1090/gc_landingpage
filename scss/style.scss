@@ -12,13 +12,15 @@
 
 // import scss
 @import "fonts";
+@import "colors";
 
 /*****************************************************
 New css variables
 *****************************************************/
-$section-heading:   Oxford, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+$section-heading:   proxima_nova_ltthin, Arial, sans-serif;
 $sub-text:          proxima_nova_ltthin, Tahoma, sans-serif;
 $sub-text-black:    proxima_nova_altblack, Tahoma, sans-serif;
+$strong-link:       'Proxima Nova', sans-serif;
 
 /*****************************************************
 Landing Page styling
@@ -48,8 +50,8 @@ Landing Page styling
 
     h1 {
       font-family: $section-heading;
-      font-size: 4em;
-      font-weight: 100;
+      font-size: 3em;
+      font-weight: 700;
       position: relative;
       top: -0.2em;
     }
@@ -74,6 +76,15 @@ Landing Page styling
       position: relative;
       strong {
         font-weight: 700;
+      }
+    }
+
+    a.strong-link {
+      font-family: $strong-link;
+      font-weight: 700;
+      color: white;
+      &:hover {
+        text-decoration: underline;
       }
     }
 
@@ -145,7 +156,7 @@ Landing Page styling
       background-image: url('../images/htp-gameboard-bg.png');
       background-repeat: no-repeat;
       background-position: center;
-      background-position-y: 200px;
+      background-position-y: 150px;
       min-height: 700px;
 
       h1 {
@@ -175,11 +186,12 @@ Landing Page styling
         margin: .5em 0 0 2em;
         color: white;
         text-align: left;
+        opacity: 1;
       }
 
       .row.descriptions {
         position: relative;
-        top: 270px;
+        top: 260px;
 
         .columns {
           color: #000;
@@ -189,7 +201,7 @@ Landing Page styling
 
       .row.buttons {
         position: relative;
-        top: 300px;
+        top: 280px;
 
         .columns {
           color: #fff;
@@ -217,17 +229,9 @@ Landing Page styling
         top: 2em;
       }
 
-      .row .columns h1 {
-        font-family: $sub-text-black;
-        font-size: 72px;
-        margin: 0;
-        line-height: 0;
-        padding: 0;
-        float: left;
-      }
       .row .columns h2 {
         font-family: $sub-text;
-        font-size: 26px;
+        font-size: 30px;
         margin: 0;
         line-height: 1;
         padding: 0;
@@ -235,6 +239,7 @@ Landing Page styling
         margin: .5em 0 0 2em;
         color: white;
         text-align: center;
+        opacity: 1;
       }
 
       .row.descriptions {
@@ -249,7 +254,7 @@ Landing Page styling
 
       .row.buttons {
         position: relative;
-        top: 300px;
+        top: 270px;
 
         .columns {
           color: #fff;
@@ -325,9 +330,12 @@ Landing Page styling
           font-size: 30px;
           text-transform: uppercase;
           margin-bottom: -0.3em;
+          color: #fff;
         }
         ul {
           list-style: none;
+          margin-left: 2px;
+          margin-top: 5px;
           padding-left: 0;
         }
         ul li {
@@ -419,6 +427,16 @@ button .button, .button, input[type="button"], input[type="submit"], a.button {
     }
   }
 
+  button .button, .button, input[type="button"], input[type="submit"], a.button {
+    background: $button--color-light;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from($button--color-light), to($button--color));
+    background: -moz-linear-gradient($button--color-light, $button--color);
+    background: linear-gradient($button--color-light, $button--color);
+    border: solid 1px $button--color-border;
+    box-shadow: inset 0 0 0 0 $button--color-box-shadow;
+    text-shadow: 0 1px 0 $button--color-text-shadow;
+  }
+
 .inline {
     padding: 0.4rem 0.5rem !important;
     margin: 0 0.4rem;
@@ -448,12 +466,12 @@ button .button, .button, input[type="button"], input[type="submit"], a.button {
     }
 }
 
-button:hover, button:focus, .button:hover, .button:focus, a.button:hover, input[type="submit"]:hover{
-  background: #88a819;
-  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#88a819), to(#c4e125));
-  background: -moz-linear-gradient(#88a819, #c4e125);
-  background: linear-gradient(#88a819, #c4e125);
-  border: solid 1px #829c15;
-  box-shadow: inset 0 0 0 1px #c6da7b;
-  color: #fff !important;
-}
+button:hover, button:focus, .button:hover, .button:focus, a.button:hover, input[type="submit"]:hover,  .button.on, .button.on, input[type="button"].on, input[type="submit"].on, a.button.on{
+    background: $button--color;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from($button--color), to($button--color));
+    background: -moz-linear-gradient($button--color, $button--color);
+    background: linear-gradient($button--color, $button--color);
+    border: solid 1px $button--color-border;
+    box-shadow: inset 0 0 0 1px $button--color-box-shadow;
+    color: #fff !important;
+  }

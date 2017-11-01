@@ -44,6 +44,11 @@
   src: url("../fonts/Proxima Nova Thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova Thin-webfont.woff2") format("woff2"), url("../fonts/Proxima Nova Thin-webfont.woff") format("woff"), url("../fonts/Proxima Nova Thin-webfont.ttf") format("truetype"), url("../fonts/Proxima Nova Thin-webfont.svg#proxima_nova_ltthin") format("svg");
   font-weight: normal;
   font-style: normal; }
+/********************************************************
+
+2018 Colors
+
+********************************************************/
 /*****************************************************
 New css variables
 *****************************************************/
@@ -69,9 +74,9 @@ Landing Page styling
       margin-left: 10%;
       margin-right: 10%; }
     .landing-page section h1 {
-      font-family: Oxford, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-      font-size: 4em;
-      font-weight: 100;
+      font-family: proxima_nova_ltthin, Arial, sans-serif;
+      font-size: 3em;
+      font-weight: 700;
       position: relative;
       top: -0.2em; }
     .landing-page section h2 {
@@ -92,6 +97,12 @@ Landing Page styling
       position: relative; }
       .landing-page section p strong {
         font-weight: 700; }
+    .landing-page section a.strong-link {
+      font-family: "Proxima Nova", sans-serif;
+      font-weight: 700;
+      color: white; }
+      .landing-page section a.strong-link:hover {
+        text-decoration: underline; }
     .landing-page section.cards {
       background-color: #471008;
       background-image: url("../images/red-cloud-bg-dk.jpg");
@@ -134,7 +145,7 @@ Landing Page styling
       background-image: url("../images/htp-gameboard-bg.png");
       background-repeat: no-repeat;
       background-position: center;
-      background-position-y: 200px;
+      background-position-y: 150px;
       min-height: 700px; }
       .landing-page section.how-to-play h1 {
         color: #fff; }
@@ -157,16 +168,17 @@ Landing Page styling
         float: left;
         margin: .5em 0 0 2em;
         color: white;
-        text-align: left; }
+        text-align: left;
+        opacity: 1; }
       .landing-page section.how-to-play .row.descriptions {
         position: relative;
-        top: 270px; }
+        top: 260px; }
         .landing-page section.how-to-play .row.descriptions .columns {
           color: #000;
           font-size: 20px; }
       .landing-page section.how-to-play .row.buttons {
         position: relative;
-        top: 300px; }
+        top: 280px; }
         .landing-page section.how-to-play .row.buttons .columns {
           color: #fff;
           font-size: 16px;
@@ -184,23 +196,17 @@ Landing Page styling
       .landing-page section.alt-play .row:first-of-type {
         position: relative;
         top: 2em; }
-      .landing-page section.alt-play .row .columns h1 {
-        font-family: proxima_nova_altblack, Tahoma, sans-serif;
-        font-size: 72px;
-        margin: 0;
-        line-height: 0;
-        padding: 0;
-        float: left; }
       .landing-page section.alt-play .row .columns h2 {
         font-family: proxima_nova_ltthin, Tahoma, sans-serif;
-        font-size: 26px;
+        font-size: 30px;
         margin: 0;
         line-height: 1;
         padding: 0;
         float: left;
         margin: .5em 0 0 2em;
         color: white;
-        text-align: center; }
+        text-align: center;
+        opacity: 1; }
       .landing-page section.alt-play .row.descriptions {
         position: relative;
         top: 270px; }
@@ -209,7 +215,7 @@ Landing Page styling
           font-size: 20px; }
       .landing-page section.alt-play .row.buttons {
         position: relative;
-        top: 300px; }
+        top: 270px; }
         .landing-page section.alt-play .row.buttons .columns {
           color: #fff;
           font-size: 16px;
@@ -259,9 +265,12 @@ Landing Page styling
         .landing-page footer#landing-page-footer .site-map .site-area h2 {
           font-size: 30px;
           text-transform: uppercase;
-          margin-bottom: -0.3em; }
+          margin-bottom: -0.3em;
+          color: #fff; }
         .landing-page footer#landing-page-footer .site-map .site-area ul {
           list-style: none;
+          margin-left: 2px;
+          margin-top: 5px;
           padding-left: 0; }
         .landing-page footer#landing-page-footer .site-map .site-area ul li {
           font-size: 13px; }
@@ -333,6 +342,15 @@ button .button, .button, input[type="button"], input[type="submit"], a.button {
     color: #fff !important;
     cursor: default; }
 
+button .button, .button, input[type="button"], input[type="submit"], a.button {
+  background: #cd311d;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#cd311d), to(#731b11));
+  background: -moz-linear-gradient(#cd311d, #731b11);
+  background: linear-gradient(#cd311d, #731b11);
+  border: solid 1px #1a0604;
+  box-shadow: inset 0 0 0 0 #c6da7b;
+  text-shadow: 0 1px 0 #819d15; }
+
 .inline {
   padding: 0.4rem 0.5rem !important;
   margin: 0 0.4rem; }
@@ -357,12 +375,12 @@ button .button, .button, input[type="button"], input[type="submit"], a.button {
     box-shadow: none !important;
     color: #ddd !important; }
 
-button:hover, button:focus, .button:hover, .button:focus, a.button:hover, input[type="submit"]:hover {
-  background: #88a819;
-  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#88a819), to(#c4e125));
-  background: -moz-linear-gradient(#88a819, #c4e125);
-  background: linear-gradient(#88a819, #c4e125);
-  border: solid 1px #829c15;
+button:hover, button:focus, .button:hover, .button:focus, a.button:hover, input[type="submit"]:hover, .button.on, .button.on, input[type="button"].on, input[type="submit"].on, a.button.on {
+  background: #731b11;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#731b11), to(#731b11));
+  background: -moz-linear-gradient(#731b11, #731b11);
+  background: linear-gradient(#731b11, #731b11);
+  border: solid 1px #1a0604;
   box-shadow: inset 0 0 0 1px #c6da7b;
   color: #fff !important; }
 
