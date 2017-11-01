@@ -124,6 +124,7 @@ Landing Page styling
         .landing-page section.splash .bg-video video {
           min-width: 100%;
           min-height: 550px;
+          width: 100vw;
           z-index: 0;
           position: relative;
           top: -300px; }
@@ -137,6 +138,9 @@ Landing Page styling
       min-height: 700px; }
       .landing-page section.how-to-play h1 {
         color: #fff; }
+      .landing-page section.how-to-play .row:first-of-type {
+        position: relative;
+        top: 2em; }
       .landing-page section.how-to-play .row .columns h1 {
         font-family: proxima_nova_altblack, Tahoma, sans-serif;
         font-size: 72px;
@@ -169,9 +173,47 @@ Landing Page styling
           text-align: center; }
     .landing-page section.alt-play {
       background: #000;
-      color: #fff; }
+      color: #fff;
+      background-image: url("../images/altp-gameboard-bg.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 160px;
+      min-height: 700px; }
       .landing-page section.alt-play h1 {
         color: #fff; }
+      .landing-page section.alt-play .row:first-of-type {
+        position: relative;
+        top: 2em; }
+      .landing-page section.alt-play .row .columns h1 {
+        font-family: proxima_nova_altblack, Tahoma, sans-serif;
+        font-size: 72px;
+        margin: 0;
+        line-height: 0;
+        padding: 0;
+        float: left; }
+      .landing-page section.alt-play .row .columns h2 {
+        font-family: proxima_nova_ltthin, Tahoma, sans-serif;
+        font-size: 26px;
+        margin: 0;
+        line-height: 1;
+        padding: 0;
+        float: left;
+        margin: .5em 0 0 2em;
+        color: white;
+        text-align: center; }
+      .landing-page section.alt-play .row.descriptions {
+        position: relative;
+        top: 270px; }
+        .landing-page section.alt-play .row.descriptions .columns {
+          color: #fff;
+          font-size: 20px; }
+      .landing-page section.alt-play .row.buttons {
+        position: relative;
+        top: 300px; }
+        .landing-page section.alt-play .row.buttons .columns {
+          color: #fff;
+          font-size: 16px;
+          text-align: center; }
     .landing-page section.sponsor {
       background-color: #fff;
       min-height: 150px; }
@@ -249,5 +291,79 @@ Helper classes to be replaced with Gen Con classes
   content: " ";
   clear: both;
   height: 0; }
+
+/*****************************************************
+Gen Con specific classes
+*****************************************************/
+button .button, .button, input[type="button"], input[type="submit"], a.button {
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-weight: normal !important;
+  background: #a6d000;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#a6d000), to(#608c00));
+  background: -moz-linear-gradient(#a6d000, #608c00);
+  background: linear-gradient(#a6d000, #608c00);
+  border: solid 1px #829c15;
+  box-shadow: inset 0 0 0 0 #c6da7b;
+  color: #fff !important;
+  text-shadow: 0 1px 0 #819d15;
+  border-radius: 5px;
+  margin-right: rem-calc(20); }
+  button .button.align-right, .button.align-right, input[type="button"].align-right, input[type="submit"].align-right, a.button.align-right {
+    float: right;
+    margin-right: 0 !important; }
+  button .button.align-left, .button.align-left, input[type="button"].align-left, input[type="submit"].align-left, a.button.align-left {
+    float: left;
+    margin-left: 0 !important; }
+  button .button.in-panel, .button.in-panel, input[type="button"].in-panel, input[type="submit"].in-panel, a.button.in-panel {
+    margin: 5px; }
+  button .button.on, .button.on, input[type="button"].on, input[type="submit"].on, a.button.on {
+    background: #88a819;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#88a819), to(#c4e125));
+    background: -moz-linear-gradient(#88a819, #c4e125);
+    background: linear-gradient(#88a819, #c4e125);
+    border: solid 1px #829c15;
+    box-shadow: inset 0 0 0 1px #c6da7b;
+    color: #fff !important;
+    cursor: default; }
+
+.inline {
+  padding: 0.4rem 0.5rem !important;
+  margin: 0 0.4rem; }
+
+.even {
+  min-width: 8em; }
+
+.centered {
+  text-align: center;
+  margin: 10px !important; }
+
+.disabled {
+  background: #ccc !important;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ccc), to(#7d7d7d)) !important;
+  background: -moz-linear-gradient(#ccc, #7d7d7d) !important;
+  background: linear-gradient(#ccc, #7d7d7d) !important;
+  border: solid 1px #7d7d7d !important;
+  text-shadow: none !important;
+  color: #ddd !important; }
+  .disabled:hover {
+    border: solid 1px #7d7d7d !important;
+    box-shadow: none !important;
+    color: #ddd !important; }
+
+button:hover, button:focus, .button:hover, .button:focus, a.button:hover, input[type="submit"]:hover {
+  background: #88a819;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#88a819), to(#c4e125));
+  background: -moz-linear-gradient(#88a819, #c4e125);
+  background: linear-gradient(#88a819, #c4e125);
+  border: solid 1px #829c15;
+  box-shadow: inset 0 0 0 1px #c6da7b;
+  color: #fff !important; }
 
 /*# sourceMappingURL=style.css.map */
