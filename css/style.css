@@ -445,30 +445,48 @@ Content card styling
         width: 235px;
         height: 156px; }
       .landing-page section .card-grid .card .card-content {
-        background: #000;
+        background-color: #000;
+        background-repeat: no-repeat;
+        background-size: cover;
         border-radius: 5px;
         height: 80%;
         margin: 1em;
         position: relative; }
+      .landing-page section .card-grid .card#boardgames .card-content {
+        background-image: url("../images/card-bg-boardgames.png"); }
+      .landing-page section .card-grid .card#ccg .card-content {
+        background-image: url("../images/card-bg-ccg.png"); }
+      .landing-page section .card-grid .card#minis .card-content {
+        background-image: url("../images/card-bg-minis.png"); }
+      .landing-page section .card-grid .card#rpg .card-content {
+        background-image: url("../images/card-bg-rpg.png"); }
+      .landing-page section .card-grid .card#larp .card-content {
+        background-image: url("../images/card-bg-larp.png"); }
+      .landing-page section .card-grid .card#egames .card-content {
+        background-image: url("../images/card-bg-egames.png"); }
       .landing-page section .card-grid .card .card-title {
         color: white;
         font-family: proxima_nova_altbold, Tahoma, sans-serif;
         font-size: 18px;
         position: absolute;
-        text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
+        text-shadow: 3px 3px 10px black;
         width: 100%; }
         .landing-page section .card-grid .card .card-title.bottom {
           bottom: -8px; }
   .landing-page section .cardback {
-    width: 353px !important;
-    height: 234px !important;
+    width: 470px !important;
+    height: 312px !important;
     transition: all .2s ease-in-out; }
+    .landing-page section .cardback .card-content {
+      background-image: none !important; }
   .landing-page section .cardback-big {
     width: 100% !important;
     min-height: 450px;
     max-width: 900px;
     max-height: 450px;
     transition: all .1s ease-in-out; }
+    .landing-page section .cardback-big .card-content {
+      background-image: none !important; }
   .landing-page section .card-popup,
   .landing-page section .card-popup-content {
     display: none; }

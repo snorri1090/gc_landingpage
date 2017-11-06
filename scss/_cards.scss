@@ -50,11 +50,32 @@ Content card styling
       }
 
       .card-content {
-        background: #000;
+        background-color: #000;
+        background-repeat: no-repeat;
+        background-size: cover;
         border-radius: 5px;
         height: 80%;
         margin: 1em;
         position: relative;
+      }
+
+      &#boardgames .card-content {
+        background-image: url('../images/card-bg-boardgames.png');
+      }
+      &#ccg .card-content {
+        background-image: url('../images/card-bg-ccg.png');
+      }
+      &#minis .card-content {
+        background-image: url('../images/card-bg-minis.png');
+      }
+      &#rpg .card-content {
+        background-image: url('../images/card-bg-rpg.png');
+      }
+      &#larp .card-content {
+        background-image: url('../images/card-bg-larp.png');
+      }
+      &#egames .card-content {
+        background-image: url('../images/card-bg-egames.png');
       }
 
       .card-title {
@@ -62,7 +83,7 @@ Content card styling
         font-family: $sub-text-bold;
         font-size: 18px;
         position: absolute;
-        text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
         width: 100%;
 
         &.bottom {
@@ -78,9 +99,13 @@ Content card styling
   *****************************************************/
 
   .cardback {
-    width: 353px !important;
-    height: 234px !important;
+    width: 470px !important;
+    height: 312px !important;
     transition: all .2s ease-in-out;
+
+    .card-content {
+      background-image: none !important;
+    }
   }
 
   .cardback-big {
@@ -89,6 +114,10 @@ Content card styling
     max-width: 900px;
     max-height: 450px;
     transition: all .1s ease-in-out;
+
+    .card-content {
+      background-image: none !important;
+    }
   }
 
   .card-popup,
