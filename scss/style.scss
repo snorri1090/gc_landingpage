@@ -13,7 +13,7 @@
 // import scss
 @import "fonts";
 @import "colors";
-@import "cards";
+//@import "cards";
 
 /*****************************************************
 New css variables
@@ -84,16 +84,24 @@ Landing Page styling
       font-family: $strong-link;
       font-weight: 700;
       color: white;
+
       &:hover {
         text-decoration: underline;
       }
     }
 
-      h1,
-      h2 {
-        color: #fff;
-      }
-    }
+    &.cards {
+     background-color: #471008;
+     background-image: url("../images/red-cloud-bg-dk.jpg");
+     background-size: 100%;
+     background-position-y: -600px;
+     background-repeat: no-repeat;
+
+     h1,
+     h2 {
+       color: #fff;
+     }
+   }
 
     &.splash {
       background: #999;
@@ -130,7 +138,6 @@ Landing Page styling
           top: -300px;
         }
       }
-
     }
     &.games {
     }
@@ -279,6 +286,45 @@ Landing Page styling
         color: #a4a0a0;
       }
     }
+  }
+
+  .card-grid {
+    margin: 0 auto;
+    text-align: center;
+
+    .card {
+      background-color: black; //temp color
+      border-radius: 7px;
+      color: #fff;
+      display: inline-block;
+      margin: 10px;
+
+      &.portrait {
+        width: 156px;
+        height: 235px;
+      }
+
+      &.landscape {
+        width: 235px;
+        height: 156px;
+      }
+    }
+  }
+  .card-popup,
+  .card-popup-content {
+    display: none;
+
+
+    .card-popup {
+      color: #fff;
+      text-align: center;
+      width: 100%;
+      height: 300px;
+      background-color: #000;
+      border-radius: 6px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
 
   }
 
@@ -306,12 +352,14 @@ Landing Page styling
           margin-bottom: -0.3em;
           color: #fff;
         }
+
         ul {
           list-style: none;
           margin-left: 2px;
           margin-top: 5px;
           padding-left: 0;
         }
+
         ul li {
           font-size: 13px;
         }

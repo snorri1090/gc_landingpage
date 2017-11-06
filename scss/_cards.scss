@@ -8,12 +8,13 @@ Content card styling
   cards container div
   *****************************************************/
 
-  &.cards {
+  .cards {
     background-color: #471008;
     background-image: url("../images/red-cloud-bg-dk.jpg");
     background-size: 100%;
     background-position-y: -600px;
     background-repeat: no-repeat;
+  }
 
   .card-grid {
     margin: 0 auto;
