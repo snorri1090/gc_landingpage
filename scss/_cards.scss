@@ -25,11 +25,21 @@ Content card styling
     *****************************************************/
 
     .card {
-      background-color: black; //temp color
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e28888+1,c9c9c9+49,d6d6d6+51,999999+100 */
+      background: #e28888; /* Old browsers */
+      background: -moz-linear-gradient(top, #e28888 1%, #c9c9c9 49%, #d6d6d6 51%, #999999 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #e28888 1%,#c9c9c9 49%,#d6d6d6 51%,#999999 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #e28888 1%,#c9c9c9 49%,#d6d6d6 51%,#999999 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e28888', endColorstr='#999999',GradientType=0 ); /* IE6-9 */
+
       border-radius: 7px;
       color: #fff;
       display: inline-block;
       margin: 10px;
+      box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
+      transition: all .2s ease-in-out;
+
+
       &.portrait {
         width: 156px;
         height: 235px;
@@ -38,12 +48,48 @@ Content card styling
         width: 235px;
         height: 156px;
       }
+
+      .card-content {
+        background: #000;
+        border-radius: 5px;
+        height: 80%;
+        margin: 1em;
+        position: relative;
+      }
+
+      .card-title {
+        color: white;
+        font-family: $sub-text-bold;
+        font-size: 18px;
+        position: absolute;
+        text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
+        width: 100%;
+
+        &.bottom {
+          bottom: -8px;
+        }
+      }
+
     }
   }
 
   /*****************************************************
   card pop-up styling
   *****************************************************/
+
+  .cardback {
+    width: 353px !important;
+    height: 234px !important;
+    transition: all .2s ease-in-out;
+  }
+
+  .cardback-big {
+    width: 100% !important;
+    min-height: 450px;
+    max-width: 900px;
+    max-height: 450px;
+    transition: all .1s ease-in-out;
+  }
 
   .card-popup,
   .card-popup-content {

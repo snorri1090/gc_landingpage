@@ -13,7 +13,6 @@
 // import scss
 @import "fonts";
 @import "colors";
-//@import "cards";
 
 /*****************************************************
 New css variables
@@ -21,7 +20,9 @@ New css variables
 $section-heading:   proxima_nova_ltthin, Arial, sans-serif;
 $sub-text:          proxima_nova_ltthin, Tahoma, sans-serif;
 $sub-text-black:    proxima_nova_altblack, Tahoma, sans-serif;
+$sub-text-bold:     proxima_nova_altbold, Tahoma, sans-serif;
 $strong-link:       'Proxima Nova', sans-serif;
+
 
 /*****************************************************
 Landing Page styling
@@ -497,3 +498,5 @@ button:hover, button:focus, .button:hover, .button:focus, a.button:hover, input[
     box-shadow: inset 0 0 0 1px $button--color-box-shadow;
     color: #fff !important;
   }
+
+@import "cards";

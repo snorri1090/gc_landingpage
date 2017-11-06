@@ -10,12 +10,12 @@ jQuery(function($) {
   // select card
   $( card ).click(function() {
 
-    if ( $( this ).hasClass( "cardback" ) ) {
-      $( this ).removeClass("cardback");
+    if ( $( this ).hasClass( "cardback-big" ) ) {
+      $( this ).removeClass("cardback-big");
     } else {
 
-      $( this ).addClass("cardback");
-      $(".card").not( this ).removeClass("cardback");
+      $( this ).addClass("cardback-big");
+      $(".card").not( this ).removeClass("cardback-big");
     }
   });
 });
