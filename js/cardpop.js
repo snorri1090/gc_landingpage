@@ -7,12 +7,14 @@ jQuery(function($) {
   // select card
   $( card ).click(function() {
 
-    if ( $( this ).hasClass( "cardback" ) ) {
+    // if event target is currently expanded
+    if ($(this).hasClass("cardback")) {
       $(this).removeClass("cardback");
-      $( this ).find( "article" ).hide();
+      $(this).find( "article" ).hide();
+      $(this).find(".card-title").show();
 
     } else {
-      cardContent = $(this).find( "article" );
+      cardContent = $(this).find("article");
 
       $(this).addClass("cardback");
       $(card).not(this).removeClass("cardback");
