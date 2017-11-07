@@ -71,3 +71,18 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/*********************************************
+import Gen Con font
+*********************************************/
+
+@font-face {
+	font-family: 'gencon';
+	src: url('../fonts/gencon.eot');
+	src: url('../fonts/gencon.eot') format('embedded-opentype'),
+		   url('../fonts/gencon.woff') format('woff'),
+		   url('../fonts/gencon.ttf') format('truetype'),
+		   url('../fonts/gencon.svg#gencon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

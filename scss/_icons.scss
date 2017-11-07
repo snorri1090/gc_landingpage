@@ -1,19 +1,4 @@
 /*********************************************
-import Gen Con font
-*********************************************/
-
-@font-face {
-	font-family: 'gencon';
-	src: font-url('gencon.eot');
-	src: font-url('gencon.eot') format('embedded-opentype'),
-		   font-url('gencon.woff') format('woff'),
-		   font-url('gencon.ttf') format('truetype'),
-		   font-url('gencon.svg#gencon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-/*********************************************
 class selectors for Font Awesome
 *********************************************/
 
@@ -37,6 +22,20 @@ class selectors for Font Awesome
         color: #000;
     }
 }
+
+// Icon Sizes
+// -------------------------
+
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: (4em / 3);
+  line-height: (3em / 4);
+  vertical-align: -15%;
+}
+.fa-2x { font-size: 2em; }
+.fa-3x { font-size: 3em; }
+.fa-4x { font-size: 4em; }
+.fa-5x { font-size: 5em; }
 
 
 /*********************************************

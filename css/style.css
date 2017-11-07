@@ -44,20 +44,20 @@
   src: url("../fonts/Proxima Nova Thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova Thin-webfont.woff2") format("woff2"), url("../fonts/Proxima Nova Thin-webfont.woff") format("woff"), url("../fonts/Proxima Nova Thin-webfont.ttf") format("truetype"), url("../fonts/Proxima Nova Thin-webfont.svg#proxima_nova_ltthin") format("svg");
   font-weight: normal;
   font-style: normal; }
-/********************************************************
-
-2018 Colors
-
-********************************************************/
 /*********************************************
 import Gen Con font
 *********************************************/
 @font-face {
   font-family: 'gencon';
-  src: font-url("gencon.eot");
-  src: font-url("gencon.eot") format("embedded-opentype"), font-url("gencon.woff") format("woff"), font-url("gencon.ttf") format("truetype"), font-url("gencon.svg#gencon") format("svg");
+  src: url("../fonts/gencon.eot");
+  src: url("../fonts/gencon.eot") format("embedded-opentype"), url("../fonts/gencon.woff") format("woff"), url("../fonts/gencon.ttf") format("truetype"), url("../fonts/gencon.svg#gencon") format("svg");
   font-weight: normal;
   font-style: normal; }
+/********************************************************
+
+2018 Colors
+
+********************************************************/
 /*********************************************
 class selectors for Font Awesome
 *********************************************/
@@ -76,6 +76,24 @@ class selectors for Font Awesome
   color: #fff; }
 [class*="fa-"] .black {
   color: #000; }
+
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -15%; }
+
+.fa-2x {
+  font-size: 2em; }
+
+.fa-3x {
+  font-size: 3em; }
+
+.fa-4x {
+  font-size: 4em; }
+
+.fa-5x {
+  font-size: 5em; }
 
 /*********************************************
 Map navigation menu icons
@@ -2106,16 +2124,17 @@ Content card styling
       background-repeat: repeat !important;
       height: 90% !important;
       position: relative; }
-  .landing-page section .cardback-big {
-    width: 100% !important;
-    min-height: 450px;
-    max-width: 900px;
-    max-height: 450px;
-    transition: all .1s ease-in-out;
-    padding-top: 1em; }
-    .landing-page section .cardback-big .card-content {
-      background-image: none !important;
-      height: 90%; }
+      .landing-page section .cardback .card-content .close-button {
+        color: white;
+        position: absolute;
+        float: right;
+        right: 0px;
+        top: -27px; }
+        .landing-page section .cardback .card-content .close-button:hover {
+          color: #ccc;
+          text-decoration: none; }
+        .landing-page section .cardback .card-content .close-button i {
+          font-size: 1.2em; }
   .landing-page section article.card-popup-content h1 {
     color: white;
     font-family: proxima_nova_altbold, Tahoma, sans-serif;
