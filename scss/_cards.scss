@@ -50,7 +50,7 @@ Content card styling
       }
 
       .card-content {
-        background-color: #aaa;
+        background-color: #888;
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 5px;
@@ -102,9 +102,12 @@ Content card styling
     width: 470px !important;
     height: 312px !important;
     transition: all .2s ease-in-out;
+    padding-top: 1em;
 
     .card-content {
       background-image: none !important;
+      height: 90% !important;
+      position: relative;
     }
   }
 
@@ -114,11 +117,40 @@ Content card styling
     max-width: 900px;
     max-height: 450px;
     transition: all .1s ease-in-out;
+    padding-top: 1em;
 
     .card-content {
       background-image: none !important;
+      height: 90%;
     }
   }
+
+  /*****************************************************
+  card popup article styling
+  *****************************************************/
+  article.card-popup-content {
+    h1 {
+      color: white;
+      font-family: $sub-text-bold;
+      font-size: 18px;
+      position: absolute;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+      width: 100%;
+      top: -1.7em;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    p {
+      font-size: 14px;
+      padding: 1em .3em 0 .3em;
+      text-align: left;
+    }
+  }
+
+  /*****************************************************
+  not used
+  *****************************************************/
 
   .card-popup,
   .card-popup-content {
