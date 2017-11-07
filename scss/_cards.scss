@@ -105,7 +105,8 @@ Content card styling
     padding-top: 1em;
 
     .card-content {
-      background-image: none !important;
+      background-image: url('../images/card-popup-bg-tile-dk.jpg') !important;
+      background-repeat: repeat !important;
       height: 90% !important;
       position: relative;
     }
@@ -141,8 +142,23 @@ Content card styling
       margin-right: 0;
     }
 
+    .card-popup-img {
+      border: 1px solid #000;
+      border-radius: 6px;
+      float: left;
+      height: 100px;
+      margin: 10px;
+      overflow: hidden;
+      width: 180px;
+
+      img {
+        width: 100%;
+      }
+    }
+
     p {
       font-size: 14px;
+      color: #fff;
       padding: 1em .3em 0 .3em;
       text-align: left;
     }

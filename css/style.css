@@ -2102,7 +2102,8 @@ Content card styling
     transition: all .2s ease-in-out;
     padding-top: 1em; }
     .landing-page section .cardback .card-content {
-      background-image: none !important;
+      background-image: url("../images/card-popup-bg-tile-dk.jpg") !important;
+      background-repeat: repeat !important;
       height: 90% !important;
       position: relative; }
   .landing-page section .cardback-big {
@@ -2125,8 +2126,19 @@ Content card styling
     top: -1.7em;
     margin-left: 0;
     margin-right: 0; }
+  .landing-page section article.card-popup-content .card-popup-img {
+    border: 1px solid #000;
+    border-radius: 6px;
+    float: left;
+    height: 100px;
+    margin: 10px;
+    overflow: hidden;
+    width: 180px; }
+    .landing-page section article.card-popup-content .card-popup-img img {
+      width: 100%; }
   .landing-page section article.card-popup-content p {
     font-size: 14px;
+    color: #fff;
     padding: 1em .3em 0 .3em;
     text-align: left; }
   .landing-page section .card-popup,
