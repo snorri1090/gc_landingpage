@@ -1,19 +1,21 @@
 jQuery(function($) {
-  //variables
+
   var card = $(".card"); // card container
+  var closeButton = $(".close-button"); // close button - du doy!
   var cardContent;
   var cardTitle;
+  var currentCard;
 
   // select card
   $( card ).click(function() {
 
     // if event target is currently expanded
     if ($(this).hasClass("cardback")) {
-      $(this).removeClass("cardback");
-      $(this).find( "article" ).hide();
-      $(this).find(".card-title").show();
+      return false;
 
     } else {
+
+      currentCard = $(this);
       cardContent = $(this).find("article");
 
       $(this).addClass("cardback");
@@ -28,7 +30,18 @@ jQuery(function($) {
 
       // hide any other card contents
       $(card).not(this).find("article").hide();
+
+      // select close button
+      $( closeButton ).click(function() {
+        $(currentCard).removeClass("cardback");
+        $(currentCard).find( "article" ).hide();
+        $(currentCard).find(".card-title").show();
+
+        return false;
+      });
+
     }
     return false;
   });
+
 });

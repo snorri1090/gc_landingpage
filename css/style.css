@@ -2129,7 +2129,8 @@ Content card styling
         position: absolute;
         float: right;
         right: 0px;
-        top: -27px; }
+        top: -27px;
+        z-index: 1000; }
         .landing-page section .cardback .card-content .close-button:hover {
           color: #ccc;
           text-decoration: none; }
