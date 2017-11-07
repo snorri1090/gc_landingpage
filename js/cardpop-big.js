@@ -17,5 +17,6 @@ jQuery(function($) {
       $( this ).addClass("cardback-big");
       $(".card").not( this ).removeClass("cardback-big");
     }
+    return false;
   });
 });

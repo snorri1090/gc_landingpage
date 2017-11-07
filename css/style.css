@@ -445,7 +445,7 @@ Content card styling
         width: 235px;
         height: 156px; }
       .landing-page section .card-grid .card .card-content {
-        background-color: #000;
+        background-color: #aaa;
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 5px;
