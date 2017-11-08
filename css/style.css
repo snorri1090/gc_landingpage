@@ -2085,6 +2085,9 @@ Content card styling
       .landing-page section .card-grid .card.landscape {
         width: 235px;
         height: 156px; }
+        .landing-page section .card-grid .card.landscape:hover {
+          width: 247px;
+          height: 164px; }
       .landing-page section .card-grid .card .card-content {
         background-color: #888;
         background-repeat: no-repeat;

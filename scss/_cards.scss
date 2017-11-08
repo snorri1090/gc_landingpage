@@ -47,6 +47,11 @@ Content card styling
       &.landscape {
         width: 235px;
         height: 156px;
+
+        &:hover {
+          width: 247px;
+          height: 164px;
+        }
       }
 
       .card-content {
