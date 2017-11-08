@@ -27,6 +27,7 @@ jQuery(function($) {
       // hide the main card title
       cardTitle = $(this).find("h3");
       $(this).find(".card-title").hide();
+      $(card).not(this).find(".card-title").show();
 
       // hide any other card contents
       $(card).not(this).find("article").hide();

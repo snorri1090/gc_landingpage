@@ -58,6 +58,7 @@ import Gen Con font
 2018 Colors
 
 ********************************************************/
+/****************************************************/
 /*********************************************
 class selectors for Font Awesome
 *********************************************/
@@ -2063,16 +2064,7 @@ Content card styling
     *****************************************************/ }
     .landing-page section .card-grid .card {
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e28888+1,c9c9c9+49,d6d6d6+51,999999+100 */
-      background: #e28888;
-      /* Old browsers */
-      background: -moz-linear-gradient(top, #e28888 1%, #c9c9c9 49%, #d6d6d6 51%, #999999 100%);
-      /* FF3.6-15 */
-      background: -webkit-linear-gradient(top, #e28888 1%, #c9c9c9 49%, #d6d6d6 51%, #999999 100%);
-      /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to bottom, #e28888 1%, #c9c9c9 49%, #d6d6d6 51%, #999999 100%);
-      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e28888', endColorstr='#999999',GradientType=0 );
-      /* IE6-9 */
+      background-color: #333;
       border-radius: 7px;
       color: #fff;
       display: inline-block;
@@ -2085,16 +2077,57 @@ Content card styling
       .landing-page section .card-grid .card.landscape {
         width: 235px;
         height: 156px; }
-        .landing-page section .card-grid .card.landscape:hover {
-          width: 247px;
-          height: 164px; }
+      .landing-page section .card-grid .card .card-shine-x,
+      .landing-page section .card-grid .card .card-shine-y {
+        position: absolute; }
+      .landing-page section .card-grid .card .card-shine-x {
+        border-radius: 0 5px 0 0;
+        left: 29px;
+        top: -3px;
+        height: 7px;
+        width: 195px;
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+        /* IE6-9 */ }
+      .landing-page section .card-grid .card .card-shine-y {
+        border-radius: 0 0 5px 0;
+        left: -1px;
+        top: 29px;
+        height: 115px;
+        width: 10px;
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+        /* IE6-9 */ }
+      .landing-page section .card-grid .card .event-type {
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: -1em;
+        left: -1em;
+        width: 45px;
+        height: 45px;
+        background-color: #333;
+        border-radius: 50%;
+        z-index: 2;
+        padding-top: .2em; }
+        .landing-page section .card-grid .card .event-type img {
+          width: 80%; }
       .landing-page section .card-grid .card .card-content {
         background-color: #888;
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 5px;
-        height: 80%;
-        margin: 1em;
+        height: 145px;
+        margin: 0.3em;
         position: relative; }
       .landing-page section .card-grid .card#boardgames .card-content {
         background-image: url("../images/card-bg-boardgames.png"); }
@@ -2108,18 +2141,25 @@ Content card styling
         background-image: url("../images/card-bg-larp.png"); }
       .landing-page section .card-grid .card#egames .card-content {
         background-image: url("../images/card-bg-egames.png"); }
+      .landing-page section .card-grid .card .card-title-plate {
+        background: #333;
+        position: absolute;
+        top: -.3em;
+        margin: 0 auto;
+        width: 100%;
+        height: 20%; }
       .landing-page section .card-grid .card .card-title {
         color: white;
         font-family: proxima_nova_altbold, Tahoma, sans-serif;
         font-size: 18px;
-        position: absolute;
         text-shadow: 3px 3px 10px black;
-        width: 100%; }
-        .landing-page section .card-grid .card .card-title.bottom {
-          bottom: -8px; }
+        text-align: center; }
+        .landing-page section .card-grid .card .card-title.small-title {
+          font-size: 14px;
+          line-height: .9; }
   .landing-page section .cardback {
-    width: 470px !important;
-    height: 312px !important;
+    width: 312px !important;
+    height: 470px !important;
     transition: all .2s ease-in-out;
     padding-top: 1em; }
     .landing-page section .cardback .card-content {
