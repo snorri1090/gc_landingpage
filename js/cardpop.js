@@ -26,7 +26,6 @@ jQuery(function($) {
 
       // hide the main card title
       cardTitle = $(this).find("h3");
-      $(this).find(".card-title").hide();
       $(card).not(this).find(".card-title").show();
 
       // hide any other card contents
@@ -36,7 +35,6 @@ jQuery(function($) {
       $( closeButton ).click(function() {
         $(currentCard).removeClass("cardback");
         $(currentCard).find( "article" ).hide();
-        $(currentCard).find(".card-title").show();
 
         return false;
       });

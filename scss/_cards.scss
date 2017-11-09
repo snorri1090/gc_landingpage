@@ -38,20 +38,9 @@ Content card styling
       margin: 10px;
       box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
       transition: all .2s ease-in-out;
-
-
-      &.portrait {
-        width: 156px;
-        height: 235px;
-      }
-      &.landscape {
-        width: 235px;
-        height: 156px;
-
-        &:hover {
-
-        }
-      }
+      width: 235px;
+      height: 156px;
+      vertical-align: top;
 
       .card-shine-x,
       .card-shine-y {
@@ -163,6 +152,25 @@ Content card styling
     transition: all .2s ease-in-out;
     padding-top: 1em;
 
+    .card-title-plate {
+      height: 15px !important;
+
+      .card-title {
+        margin: 0px;
+        position: relative;
+        top: -12px;
+      }
+    }
+
+    .card-shine-x {
+      top: -19px !important;
+      width: 275px !important;
+    }
+
+    .event-type {
+      top: -2em !important;
+    }
+
     .card-content {
       background-image: url('../images/card-popup-bg-tile-dk.jpg') !important;
       background-repeat: repeat !important;
@@ -174,7 +182,7 @@ Content card styling
         position: absolute;
         float: right;
         right: 0px;
-        top: -27px;
+        top: -15px;
         z-index: 1000;
 
         &:hover {
@@ -188,21 +196,6 @@ Content card styling
       }
     }
   }
-
-  // .cardback-big {
-  //   width: 100% !important;
-  //   min-height: 450px;
-  //   max-width: 900px;
-  //   max-height: 450px;
-  //   transition: all .1s ease-in-out;
-  //   padding-top: 1em;
-  //
-  //   .card-content {
-  //     background-image: none !important;
-  //     height: 90%;
-  //   }
-  // }
-
 
   /*****************************************************
   card popup article styling
@@ -221,13 +214,8 @@ Content card styling
     }
 
     .card-popup-img {
-      border: 1px solid #000;
-      border-radius: 6px;
-      float: left;
-      height: 100px;
-      margin: 10px;
       overflow: hidden;
-      width: 180px;
+      width: 100%;
 
       img {
         width: 100%;
@@ -241,25 +229,4 @@ Content card styling
       text-align: left;
     }
   }
-
-  /*****************************************************
-  not used
-  *****************************************************/
-
-  .card-popup,
-  .card-popup-content {
-    display: none;
-  }
-
-  .card-popup {
-    color: #fff;
-    text-align: center;
-    width: 100%;
-    height: 300px;
-    background-color: #000;
-    border-radius: 6px;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
 }

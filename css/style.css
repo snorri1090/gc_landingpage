@@ -1757,6 +1757,7 @@ Landing Page styling
         max-width: 420px;
         min-width: 300px;
         position: absolute;
+        right: 10px;
         top: 50px;
         width: 25%;
         z-index: 1; }
@@ -2046,9 +2047,6 @@ Content card styling
   *****************************************************/
   /*****************************************************
   card popup article styling
-  *****************************************************/
-  /*****************************************************
-  not used
   *****************************************************/ }
   .landing-page section .cards {
     background-color: #471008;
@@ -2070,13 +2068,10 @@ Content card styling
       display: inline-block;
       margin: 10px;
       box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
-      transition: all .2s ease-in-out; }
-      .landing-page section .card-grid .card.portrait {
-        width: 156px;
-        height: 235px; }
-      .landing-page section .card-grid .card.landscape {
-        width: 235px;
-        height: 156px; }
+      transition: all .2s ease-in-out;
+      width: 235px;
+      height: 156px;
+      vertical-align: top; }
       .landing-page section .card-grid .card .card-shine-x,
       .landing-page section .card-grid .card .card-shine-y {
         position: absolute; }
@@ -2162,6 +2157,17 @@ Content card styling
     height: 470px !important;
     transition: all .2s ease-in-out;
     padding-top: 1em; }
+    .landing-page section .cardback .card-title-plate {
+      height: 15px !important; }
+      .landing-page section .cardback .card-title-plate .card-title {
+        margin: 0px;
+        position: relative;
+        top: -12px; }
+    .landing-page section .cardback .card-shine-x {
+      top: -19px !important;
+      width: 275px !important; }
+    .landing-page section .cardback .event-type {
+      top: -2em !important; }
     .landing-page section .cardback .card-content {
       background-image: url("../images/card-popup-bg-tile-dk.jpg") !important;
       background-repeat: repeat !important;
@@ -2172,7 +2178,7 @@ Content card styling
         position: absolute;
         float: right;
         right: 0px;
-        top: -27px;
+        top: -15px;
         z-index: 1000; }
         .landing-page section .cardback .card-content .close-button:hover {
           color: #ccc;
@@ -2190,13 +2196,8 @@ Content card styling
     margin-left: 0;
     margin-right: 0; }
   .landing-page section article.card-popup-content .card-popup-img {
-    border: 1px solid #000;
-    border-radius: 6px;
-    float: left;
-    height: 100px;
-    margin: 10px;
     overflow: hidden;
-    width: 180px; }
+    width: 100%; }
     .landing-page section article.card-popup-content .card-popup-img img {
       width: 100%; }
   .landing-page section article.card-popup-content p {
@@ -2204,17 +2205,5 @@ Content card styling
     color: #fff;
     padding: 1em .3em 0 .3em;
     text-align: left; }
-  .landing-page section .card-popup,
-  .landing-page section .card-popup-content {
-    display: none; }
-  .landing-page section .card-popup {
-    color: #fff;
-    text-align: center;
-    width: 100%;
-    height: 300px;
-    background-color: #000;
-    border-radius: 6px;
-    max-width: 900px;
-    margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
