@@ -301,16 +301,6 @@ Landing Page styling
       color: #fff;
       display: inline-block;
       margin: 10px;
-
-      &.portrait {
-        width: 156px;
-        height: 235px;
-      }
-
-      &.landscape {
-        width: 235px;
-        height: 156px;
-      }
     }
   }
   .card-popup,
