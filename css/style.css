@@ -2178,10 +2178,10 @@ Content card styling
       height: 27px;
       top: 10px;
       width: 312px; }
-      .landing-page section .card.cardback .card-title-plate .card-title {
-        margin: 0px;
-        position: relative;
-        top: -12px; }
+    .landing-page section .card.cardback .card-title {
+      margin: 0px;
+      position: absolute;
+      top: 12px; }
     .landing-page section .card.cardback .card-shine-x {
       top: -6px;
       width: 300px; }

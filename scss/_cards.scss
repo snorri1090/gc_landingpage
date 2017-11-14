@@ -183,12 +183,12 @@ Content card styling
       height: 27px;
       top: 10px;
       width: 312px;
+    }
 
-      .card-title {
-        margin: 0px;
-        position: relative;
-        top: -12px;
-      }
+    .card-title {
+      margin: 0px;
+      position: absolute;
+      top: 12px;
     }
 
     .card-shine-x {
