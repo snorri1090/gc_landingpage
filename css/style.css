@@ -2038,6 +2038,7 @@ Content card styling
   *****************************************************/
   /*****************************************************
   card pop-up styling
+    styling overrides for card and content
   *****************************************************/
   /*****************************************************
   card popup article styling
@@ -2065,10 +2066,7 @@ Content card styling
       transition: all .2s ease-in-out;
       width: 325px;
       height: 216px;
-      vertical-align: top;
-      /**************************************************
-      Hex box and hexagon shapes
-      **************************************************/ }
+      vertical-align: top; }
       .landing-page section .card-grid .card .card-shine-x,
       .landing-page section .card-grid .card .card-shine-y {
         position: absolute; }
@@ -2123,24 +2121,30 @@ Content card styling
         height: calc(100% - 10px);
         margin: 5px;
         position: relative; }
-      .landing-page section .card-grid .card #boardgames {
-        background-image: url("../images/card-bg-boardgames.png");
-        background-repeat: no-repeat; }
-      .landing-page section .card-grid .card #ccg {
-        background-image: url("../images/card-bg-ccg.png");
-        background-repeat: no-repeat; }
-      .landing-page section .card-grid .card #minis {
-        background-image: url("../images/card-bg-minis.png");
-        background-repeat: no-repeat; }
-      .landing-page section .card-grid .card #rpg {
-        background-image: url("../images/card-bg-rpg.png");
-        background-repeat: no-repeat; }
-      .landing-page section .card-grid .card #larp {
-        background-image: url("../images/card-bg-larp.png");
-        background-repeat: no-repeat; }
-      .landing-page section .card-grid .card #egames {
-        background-image: url("../images/card-bg-egames.png");
-        background-repeat: no-repeat; }
+        .landing-page section .card-grid .card .card-content .card-art {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          background-size: cover;
+          background-repeat: no-repeat; }
+          .landing-page section .card-grid .card .card-content .card-art#boardgames {
+            background-image: url("../images/card-bg-boardgames.png");
+            background-repeat: no-repeat; }
+          .landing-page section .card-grid .card .card-content .card-art#ccg {
+            background-image: url("../images/card-bg-ccg.png");
+            background-repeat: no-repeat; }
+          .landing-page section .card-grid .card .card-content .card-art#minis {
+            background-image: url("../images/card-bg-minis.png");
+            background-repeat: no-repeat; }
+          .landing-page section .card-grid .card .card-content .card-art#rpg {
+            background-image: url("../images/card-bg-rpg.png");
+            background-repeat: no-repeat; }
+          .landing-page section .card-grid .card .card-content .card-art#larp {
+            background-image: url("../images/card-bg-larp.png");
+            background-repeat: no-repeat; }
+          .landing-page section .card-grid .card .card-content .card-art#egames {
+            background-image: url("../images/card-bg-egames.png");
+            background-repeat: no-repeat; }
       .landing-page section .card-grid .card .card-title-plate {
         background: #333;
         border-radius: 0 5px 5px 0;
@@ -2166,38 +2170,10 @@ Content card styling
         .landing-page section .card-grid .card .card-title.small-title {
           font-size: 14px;
           line-height: .9; }
-      .landing-page section .card-grid .card .hexbox {
-        width: 50px;
-        height: 50px;
-        overflow: hidden; }
-      .landing-page section .card-grid .card .r-hex {
-        overflow: hidden;
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        transform: rotate(-30deg) skewX(30deg);
-        border-radius: .2em; }
-      .landing-page section .card-grid .card .r-hex *, .landing-page section .card-grid .card .r-hex *:before {
-        display: block;
-        overflow: hidden;
-        width: inherit;
-        height: inherit;
-        border-radius: inherit; }
-      .landing-page section .card-grid .card .r-hex-inner {
-        transform: skewX(-30deg) rotate(60deg) skewX(30deg);
-        opacity: .9;
-        transition: opacity .75s; }
-      .landing-page section .card-grid .card .r-hex:first-child
-      .r-hex-inner:before, .landing-page section .card-grid .card .r-hex-inner-2 {
-        transform: skewX(-30deg) rotate(60deg) skewX(30deg);
-        background: #000; }
   .landing-page section .card.cardback {
-    width: 312px;
+    width: 375px;
     height: 470px;
-    transition: all .2s ease-in-out;
-    padding-top: 1em;
-    background: url("../images/card-popup-bg-tile-dk.jpg");
-    background-repeat: repeat; }
+    transition: all .2s ease-in-out; }
     .landing-page section .card.cardback .card-title-plate {
       height: 27px; }
       .landing-page section .card.cardback .card-title-plate .card-title {
@@ -2205,16 +2181,18 @@ Content card styling
         position: relative;
         top: -12px; }
     .landing-page section .card.cardback .card-shine-x {
-      top: -22px;
+      top: -6px;
       width: 300px; }
     .landing-page section .card.cardback .card-shine-y {
-      top: -22px; }
+      top: -6px; }
     .landing-page section .card.cardback .event-type {
       top: 0em; }
     .landing-page section .card.cardback .card-content {
       height: 90%;
       position: relative;
-      border-bottom: none; }
+      border-bottom: none;
+      background: url("../images/card-popup-bg-tile-dk.jpg");
+      background-repeat: repeat; }
       .landing-page section .card.cardback .card-content .close-button {
         color: white;
         position: absolute;

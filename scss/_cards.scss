@@ -101,31 +101,39 @@ Content card styling
         height: calc(100% - 10px);
         margin: 5px;
         position: relative;
-      }
 
-      #boardgames {
-        background-image: url('../images/card-bg-boardgames.png');
-        background-repeat: no-repeat;
-      }
-      #ccg {
-        background-image: url('../images/card-bg-ccg.png');
-        background-repeat: no-repeat;
-      }
-      #minis{
-        background-image: url('../images/card-bg-minis.png');
-        background-repeat: no-repeat;
-      }
-      #rpg{
-        background-image: url('../images/card-bg-rpg.png');
-        background-repeat: no-repeat;
-      }
-      #larp{
-        background-image: url('../images/card-bg-larp.png');
-        background-repeat: no-repeat;
-      }
-      #egames{
-        background-image: url('../images/card-bg-egames.png');
-        background-repeat: no-repeat;
+        .card-art {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          background-size: cover;
+          background-repeat: no-repeat;
+
+          &#boardgames {
+            background-image: url('../images/card-bg-boardgames.png');
+            background-repeat: no-repeat;
+          }
+          &#ccg {
+            background-image: url('../images/card-bg-ccg.png');
+            background-repeat: no-repeat;
+          }
+          &#minis{
+            background-image: url('../images/card-bg-minis.png');
+            background-repeat: no-repeat;
+          }
+          &#rpg{
+            background-image: url('../images/card-bg-rpg.png');
+            background-repeat: no-repeat;
+          }
+          &#larp{
+            background-image: url('../images/card-bg-larp.png');
+            background-repeat: no-repeat;
+          }
+          &#egames{
+            background-image: url('../images/card-bg-egames.png');
+            background-repeat: no-repeat;
+          }
+        }
       }
 
       .card-title-plate {
@@ -142,22 +150,6 @@ Content card styling
         border-right: 1px solid rgba(255, 255, 255, 0.3);
         border-top: 1px solid rgba(255, 255, 255, 0.3);
         float: right;
-
-        // &:after {
-        //   content: '';
-        //   background: #333;
-        //   width: 20px;
-        //   transform: skewX(-20deg);
-        //   position: absolute;
-        //   top: -1px;
-        //   height: 33px;
-        //   right: -12px;
-        //   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        //   border-right: 1px solid rgba(255, 255, 255, 0.3);
-        //   border-top: 1px solid rgba(255, 255, 255, 0.3);
-        //   border-radius: 0 5px 5px 0;
-        // }
-
       }
 
       .card-title {
@@ -174,60 +166,18 @@ Content card styling
           line-height: .9;
         }
       }
-
-
-      /**************************************************
-      Hex box and hexagon shapes
-      **************************************************/
-      $size--hexbox:        50px;
-
-      .hexbox {
-        width: $size--hexbox;
-        height: $size--hexbox;
-        overflow: hidden;
-      }
-
-      .r-hex {
-        overflow: hidden;
-        display: inline-block;
-        //margin: 4em 0;
-        width: $size--hexbox;
-        height: $size--hexbox;
-        transform: rotate(-30deg) skewX(30deg);
-        border-radius: .2em;
-      }
-      .r-hex *, .r-hex *:before {
-        display: block;
-        overflow: hidden;
-        width: inherit;
-        height: inherit;
-        border-radius: inherit;
-      }
-      .r-hex-inner {
-        transform: skewX(-30deg) rotate(60deg) skewX(30deg);
-        opacity: .9;
-        transition: opacity .75s;
-      }
-      .r-hex:first-child
-      .r-hex-inner:before, .r-hex-inner-2 {
-        transform: skewX(-30deg) rotate(60deg) skewX(30deg);
-        background: #000;
-      }
-
     }
   }
 
   /*****************************************************
   card pop-up styling
+    styling overrides for card and content
   *****************************************************/
 
   .card.cardback {
-    width: 312px;
+    width: 375px;
     height: 470px;
     transition: all .2s ease-in-out;
-    padding-top: 1em;
-    background: url('../images/card-popup-bg-tile-dk.jpg');
-    background-repeat: repeat;
 
     .card-title-plate {
       height: 27px;
@@ -240,12 +190,12 @@ Content card styling
     }
 
     .card-shine-x {
-      top: -22px;
+      top: -6px;
       width: 300px;
     }
 
     .card-shine-y {
-      top: -22px;
+      top: -6px;
     }
 
     .event-type {
@@ -256,6 +206,8 @@ Content card styling
       height: 90%;
       position: relative;
       border-bottom: none;
+      background: url('../images/card-popup-bg-tile-dk.jpg');
+      background-repeat: repeat;
 
       .close-button {
         color: white;

@@ -5,6 +5,7 @@ jQuery(function($) {
   var cardContent;
   var cardTitle;
   var currentCard;
+  var cardArt = $(".card-art");
 
   // select card
   $( card ).click(function() {
@@ -21,6 +22,9 @@ jQuery(function($) {
       $(this).addClass("cardback");
       $(card).not(this).removeClass("cardback");
 
+      // hide the card art of the small card
+      $(cardArt).hide();
+
       // show contents of the card
       $(cardContent).show();
 
@@ -35,6 +39,7 @@ jQuery(function($) {
       $( closeButton ).click(function() {
         $(currentCard).removeClass("cardback");
         $(currentCard).find( "article" ).hide();
+        $(cardArt).show();
 
         return false;
       });
