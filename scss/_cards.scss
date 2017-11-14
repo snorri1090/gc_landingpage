@@ -74,8 +74,11 @@ Content card styling
       .event-type {
         // box-shadow: -2px 0 5px rgba(0, 0, 0, .5);
         // border: 1px solid #000;
+        background-image: url('../images/event-type-icons-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
         position: absolute;
-        top: -2px;
+        top: 2px;
         left: 2px;
         width: 45px;
         height: 45px;
@@ -84,14 +87,15 @@ Content card styling
         padding-top: .2em;
 
         img {
-          width: 100%;
+          width: 75%;
+          position: relative;
+          top: 3px;
         }
       }
 
       .card-content {
-        background-color: #888;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
         border-bottom: 2px solid #222;
         border-radius: 5px;
         height: calc(100% - 10px);
@@ -99,23 +103,29 @@ Content card styling
         position: relative;
       }
 
-      &#boardgames .card-content {
+      #boardgames {
         background-image: url('../images/card-bg-boardgames.png');
+        background-repeat: no-repeat;
       }
-      &#ccg .card-content {
+      #ccg {
         background-image: url('../images/card-bg-ccg.png');
+        background-repeat: no-repeat;
       }
-      &#minis .card-content {
+      #minis{
         background-image: url('../images/card-bg-minis.png');
+        background-repeat: no-repeat;
       }
-      &#rpg .card-content {
+      #rpg{
         background-image: url('../images/card-bg-rpg.png');
+        background-repeat: no-repeat;
       }
-      &#larp .card-content {
+      #larp{
         background-image: url('../images/card-bg-larp.png');
+        background-repeat: no-repeat;
       }
-      &#egames .card-content {
+      #egames{
         background-image: url('../images/card-bg-egames.png');
+        background-repeat: no-repeat;
       }
 
       .card-title-plate {
@@ -211,14 +221,16 @@ Content card styling
   card pop-up styling
   *****************************************************/
 
-  .cardback {
-    width: 312px !important;
-    height: 470px !important;
+  .card.cardback {
+    width: 312px;
+    height: 470px;
     transition: all .2s ease-in-out;
     padding-top: 1em;
+    background: url('../images/card-popup-bg-tile-dk.jpg');
+    background-repeat: repeat;
 
     .card-title-plate {
-      height: 15px !important;
+      height: 27px;
 
       .card-title {
         margin: 0px;
@@ -228,19 +240,22 @@ Content card styling
     }
 
     .card-shine-x {
-      top: -19px !important;
-      width: 275px !important;
+      top: -22px;
+      width: 300px;
+    }
+
+    .card-shine-y {
+      top: -22px;
     }
 
     .event-type {
-      top: -2em !important;
+      top: 0em;
     }
 
     .card-content {
-      background-image: url('../images/card-popup-bg-tile-dk.jpg') !important;
-      background-repeat: repeat !important;
-      height: 90% !important;
+      height: 90%;
       position: relative;
+      border-bottom: none;
 
       .close-button {
         color: white;
