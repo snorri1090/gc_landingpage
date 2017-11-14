@@ -176,11 +176,12 @@ Content card styling
 
   .card.cardback {
     width: 375px;
-    height: 470px;
+    height: auto;
     transition: all .2s ease-in-out;
 
     .card-title-plate {
       height: 27px;
+      top: 10px;
       width: 312px;
 
       .card-title {
@@ -251,6 +252,7 @@ Content card styling
       width: 100%;
 
       img {
+        max-height: 250px;
         width: 100%;
       }
     }

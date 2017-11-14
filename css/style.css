@@ -2172,10 +2172,11 @@ Content card styling
           line-height: .9; }
   .landing-page section .card.cardback {
     width: 375px;
-    height: 470px;
+    height: auto;
     transition: all .2s ease-in-out; }
     .landing-page section .card.cardback .card-title-plate {
       height: 27px;
+      top: 10px;
       width: 312px; }
       .landing-page section .card.cardback .card-title-plate .card-title {
         margin: 0px;
@@ -2220,6 +2221,7 @@ Content card styling
     overflow: hidden;
     width: 100%; }
     .landing-page section article.card-popup-content .card-popup-img img {
+      max-height: 250px;
       width: 100%; }
   .landing-page section article.card-popup-content p {
     font-size: 14px;
