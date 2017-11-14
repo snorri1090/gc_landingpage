@@ -5,7 +5,7 @@ jQuery(function($) {
   var cardContent;
   var cardTitle;
   var currentCard;
-  var cardArt = $(".card-art");
+  var cardArt;
 
   // select card
   $( card ).click(function() {
@@ -18,9 +18,11 @@ jQuery(function($) {
 
       currentCard = $(this);
       cardContent = $(this).find("article");
+      cardArt = $(this).find(".card-art");
 
       $(this).addClass("cardback");
       $(card).not(this).removeClass("cardback");
+      $(card).not(this).find(".card-art").show();
 
       // hide the card art of the small card
       $(cardArt).hide();

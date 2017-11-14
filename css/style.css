@@ -2148,7 +2148,7 @@ Content card styling
       .landing-page section .card-grid .card .card-title-plate {
         background: #333;
         border-radius: 0 5px 5px 0;
-        position: relative;
+        position: absolute;
         right: 5px;
         top: 12px;
         margin: 0 auto;
@@ -2175,7 +2175,8 @@ Content card styling
     height: 470px;
     transition: all .2s ease-in-out; }
     .landing-page section .card.cardback .card-title-plate {
-      height: 27px; }
+      height: 27px;
+      width: 312px; }
       .landing-page section .card.cardback .card-title-plate .card-title {
         margin: 0px;
         position: relative;
@@ -2188,7 +2189,7 @@ Content card styling
     .landing-page section .card.cardback .event-type {
       top: 0em; }
     .landing-page section .card.cardback .card-content {
-      height: 90%;
+      height: 98%;
       position: relative;
       border-bottom: none;
       background: url("../images/card-popup-bg-tile-dk.jpg");
@@ -2198,13 +2199,13 @@ Content card styling
         position: absolute;
         float: right;
         right: 0px;
-        top: -15px;
+        top: -3px;
         z-index: 1000; }
         .landing-page section .card.cardback .card-content .close-button:hover {
           color: #ccc;
           text-decoration: none; }
         .landing-page section .card.cardback .card-content .close-button i {
-          font-size: 1.2em; }
+          font-size: 1em; }
   .landing-page section article.card-popup-content h1 {
     color: white;
     font-family: proxima_nova_altbold, Tahoma, sans-serif;

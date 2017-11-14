@@ -139,7 +139,7 @@ Content card styling
       .card-title-plate {
         background: #333;
         border-radius: 0 5px 5px 0;
-        position: relative;
+        position: absolute;
         right: 5px;
         top: 12px;
         margin: 0 auto;
@@ -181,6 +181,7 @@ Content card styling
 
     .card-title-plate {
       height: 27px;
+      width: 312px;
 
       .card-title {
         margin: 0px;
@@ -203,7 +204,7 @@ Content card styling
     }
 
     .card-content {
-      height: 90%;
+      height: 98%;
       position: relative;
       border-bottom: none;
       background: url('../images/card-popup-bg-tile-dk.jpg');
@@ -214,7 +215,7 @@ Content card styling
         position: absolute;
         float: right;
         right: 0px;
-        top: -15px;
+        top: -3px;
         z-index: 1000;
 
         &:hover {
@@ -223,7 +224,7 @@ Content card styling
         }
 
         i {
-          font-size: 1.2em;
+          font-size: 1em;
         }
       }
     }
