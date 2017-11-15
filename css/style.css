@@ -2145,6 +2145,24 @@ Content card styling
           .landing-page section .card-grid .card .card-content .card-art#egames {
             background-image: url("../images/card-bg-egames.png");
             background-repeat: no-repeat; }
+          .landing-page section .card-grid .card .card-content .card-art#workshops {
+            background-image: url("../images/card-bg-workshop.png");
+            background-repeat: no-repeat; }
+          .landing-page section .card-grid .card .card-content .card-art#screenings {
+            background-image: url("../images/card-bg-film.png");
+            background-repeat: no-repeat; }
+          .landing-page section .card-grid .card .card-content .card-art#seminars {
+            background-image: url("../images/card-bg-seminar.png");
+            background-repeat: no-repeat; }
+          .landing-page section .card-grid .card .card-content .card-art#minihobby {
+            background-image: url("../images/card-bg-minihobby.png");
+            background-repeat: no-repeat; }
+          .landing-page section .card-grid .card .card-content .card-art#kid {
+            background-image: url("../images/card-bg-kid.png");
+            background-repeat: no-repeat; }
+          .landing-page section .card-grid .card .card-content .card-art#entertainment {
+            background-image: url("../images/card-bg-entertainment.png");
+            background-repeat: no-repeat; }
       .landing-page section .card-grid .card .card-title-plate {
         background: #333;
         border-radius: 0 5px 5px 0;
