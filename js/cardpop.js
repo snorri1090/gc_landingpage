@@ -50,4 +50,13 @@ jQuery(function($) {
     return false;
   });
 
+
+  // event handler for hovering over cards
+  $( card ).mouseenter(function() {
+    $(this).addClass("card-hover")
+  });
+  $( card ).mouseleave(function() {
+    $(this).removeClass("card-hover")
+  });
+
 });

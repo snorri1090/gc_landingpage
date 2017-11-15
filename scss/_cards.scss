@@ -25,12 +25,7 @@ Content card styling
     *****************************************************/
 
     .card {
-      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e28888+1,c9c9c9+49,d6d6d6+51,999999+100 */
       background-color: $color--card-border;
-      // background: -moz-linear-gradient(top, #e28888 1%, #c9c9c9 49%, #d6d6d6 51%, #999999 100%); /* FF3.6-15 */
-      // background: -webkit-linear-gradient(top, #e28888 1%,#c9c9c9 49%,#d6d6d6 51%,#999999 100%); /* Chrome10-25,Safari5.1-6 */
-      // background: linear-gradient(to bottom, #e28888 1%,#c9c9c9 49%,#d6d6d6 51%,#999999 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e28888', endColorstr='#999999',GradientType=0 ); /* IE6-9 */
 
       border-radius: 7px;
       color: #fff;
@@ -41,6 +36,14 @@ Content card styling
       width: 325px;
       height: 216px;
       vertical-align: top;
+      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+      box-sizing: border-box;         /* Opera/IE 8+ */
+      border: 2px solid rgba(0, 0, 0, 0);
+
+      &.card-hover {
+        border: 2px solid #008bad;
+      }
 
       .card-shine-x,
       .card-shine-y {

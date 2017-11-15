@@ -2056,7 +2056,6 @@ Content card styling
     card styling - need dynamic solution for card sizes
     *****************************************************/ }
     .landing-page section .card-grid .card {
-      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e28888+1,c9c9c9+49,d6d6d6+51,999999+100 */
       background-color: #333;
       border-radius: 7px;
       color: #fff;
@@ -2066,7 +2065,16 @@ Content card styling
       transition: all .2s ease-in-out;
       width: 325px;
       height: 216px;
-      vertical-align: top; }
+      vertical-align: top;
+      -webkit-box-sizing: border-box;
+      /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box;
+      /* Firefox, other Gecko */
+      box-sizing: border-box;
+      /* Opera/IE 8+ */
+      border: 2px solid transparent; }
+      .landing-page section .card-grid .card.card-hover {
+        border: 2px solid #008bad; }
       .landing-page section .card-grid .card .card-shine-x,
       .landing-page section .card-grid .card .card-shine-y {
         position: absolute; }
