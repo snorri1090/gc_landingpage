@@ -204,6 +204,11 @@ Content card styling
         border-right: 1px solid rgba(255, 255, 255, 0.3);
         border-top: 1px solid rgba(255, 255, 255, 0.3);
         float: right;
+
+        &.no-hex {
+          border-radius: 5px;
+          width: 302px;
+        }
       }
 
       .card-title {
@@ -215,9 +220,8 @@ Content card styling
         top: 11px;
         left: 54px;
 
-        &.small-title {
-          font-size: 14px;
-          line-height: .9;
+        &.no-hex {
+          left: 12px;
         }
       }
     }

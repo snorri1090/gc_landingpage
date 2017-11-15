@@ -2203,6 +2203,9 @@ Content card styling
         border-right: 1px solid rgba(255, 255, 255, 0.3);
         border-top: 1px solid rgba(255, 255, 255, 0.3);
         float: right; }
+        .landing-page section .card-grid .card .card-title-plate.no-hex {
+          border-radius: 5px;
+          width: 302px; }
       .landing-page section .card-grid .card .card-title {
         color: white;
         font-family: proxima_nova_altbold, Tahoma, sans-serif;
@@ -2211,9 +2214,8 @@ Content card styling
         position: absolute;
         top: 11px;
         left: 54px; }
-        .landing-page section .card-grid .card .card-title.small-title {
-          font-size: 14px;
-          line-height: .9; }
+        .landing-page section .card-grid .card .card-title.no-hex {
+          left: 12px; }
   .landing-page section .card.cardback {
     width: 375px;
     height: 561px;
