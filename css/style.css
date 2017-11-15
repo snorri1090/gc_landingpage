@@ -2171,6 +2171,24 @@ Content card styling
           .landing-page section .card-grid .card .card-content .card-art#entertainment {
             background-image: url("../images/card-bg-entertainment.png");
             background-repeat: no-repeat; }
+          .landing-page section .card-grid .card .card-content .card-art#anime {
+            background-image: url("../images/card-bg-anime.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#trade {
+            background-image: url("../images/card-bg-trade.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#iinsiders {
+            background-image: url("../images/card-bg-iinsider.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#wsymp {
+            background-image: url("../images/card-bg-wsymp.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#supact {
+            background-image: url("../images/card-bg-special.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#charity {
+            background-image: url("../images/card-bg-charity.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#cosplay {
+            background-image: url("../images/card-bg-cosplay.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#feph {
+            background-image: url("../images/card-bg-feph.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#georgia {
+            background-image: url("../images/card-bg-georgia.png"); }
       .landing-page section .card-grid .card .card-title-plate {
         background: #333;
         border-radius: 0 5px 5px 0;
@@ -2198,7 +2216,7 @@ Content card styling
           line-height: .9; }
   .landing-page section .card.cardback {
     width: 375px;
-    height: auto;
+    height: 561px;
     transition: all .2s ease-in-out; }
     .landing-page section .card.cardback .card-title-plate {
       height: 27px;

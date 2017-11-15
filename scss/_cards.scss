@@ -156,9 +156,36 @@ Content card styling
             background-image: url('../images/card-bg-kid.png');
             background-repeat: no-repeat;
           }
-          &#entertainment{
+          &#entertainment {
             background-image: url('../images/card-bg-entertainment.png');
             background-repeat: no-repeat;
+          }
+          &#anime {
+            background-image: url('../images/card-bg-anime.png');
+          }
+          &#trade {
+            background-image: url('../images/card-bg-trade.png');
+          }
+          &#iinsiders {
+            background-image: url('../images/card-bg-iinsider.png');
+          }
+          &#wsymp {
+            background-image: url('../images/card-bg-wsymp.png');
+          }
+          &#supact {
+            background-image: url('../images/card-bg-special.png');
+          }
+          &#charity {
+            background-image: url('../images/card-bg-charity.png');
+          }
+          &#cosplay {
+            background-image: url('../images/card-bg-cosplay.png');
+          }
+          &#feph {
+            background-image: url('../images/card-bg-feph.png');
+          }
+          &#georgia {
+            background-image: url('../images/card-bg-georgia.png');
           }
         }
       }
@@ -203,7 +230,7 @@ Content card styling
 
   .card.cardback {
     width: 375px;
-    height: auto;
+    height: 561px;
     transition: all .2s ease-in-out;
 
     .card-title-plate {
