@@ -1,6 +1,6 @@
 jQuery(function($) {
 
-  var card = $(".card"); // card container
+  var card = $(".card.active"); // card container
   var closeButton = $(".close-button"); // close button - du doy!
   var cardContent;
   var cardTitle;
