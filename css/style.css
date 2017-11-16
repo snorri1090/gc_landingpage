@@ -2082,10 +2082,10 @@ Content card styling
         position: absolute; }
       .landing-page section .card-grid .card .card-shine-x {
         border-radius: 3px 2px 0 0;
-        left: 5px;
+        left: -2px;
         top: -6px;
-        height: 3px;
-        width: 310px;
+        height: 2px;
+        width: 317px;
         background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
         /* FF3.6-15 */
         background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
@@ -2096,9 +2096,9 @@ Content card styling
         /* IE6-9 */ }
       .landing-page section .card-grid .card .card-shine-y {
         border-radius: 5px 0 0 5px;
-        left: -5px;
-        top: 5px;
-        height: 200px;
+        left: -6px;
+        top: -4px;
+        height: 210px;
         width: 2px;
         background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
         /* FF3.6-15 */
@@ -2138,41 +2138,33 @@ Content card styling
           background-size: cover;
           background-repeat: no-repeat; }
           .landing-page section .card-grid .card .card-content .card-art#boardgames {
-            background-image: url("../images/card-bg-boardgames.png");
-            background-repeat: no-repeat; }
+            background-image: url("../images/card-bg-boardgames.png"); }
           .landing-page section .card-grid .card .card-content .card-art#ccg {
-            background-image: url("../images/card-bg-ccg.png");
-            background-repeat: no-repeat; }
+            background-image: url("../images/card-bg-ccg.png"); }
           .landing-page section .card-grid .card .card-content .card-art#minis {
-            background-image: url("../images/card-bg-minis.png");
-            background-repeat: no-repeat; }
+            background-image: url("../images/card-bg-minis.png"); }
           .landing-page section .card-grid .card .card-content .card-art#rpg {
-            background-image: url("../images/card-bg-rpg.png");
-            background-repeat: no-repeat; }
+            background-image: url("../images/card-bg-rpg.png"); }
           .landing-page section .card-grid .card .card-content .card-art#larp {
-            background-image: url("../images/card-bg-larp.png");
-            background-repeat: no-repeat; }
+            background-image: url("../images/card-bg-larp.png"); }
           .landing-page section .card-grid .card .card-content .card-art#egames {
-            background-image: url("../images/card-bg-egames.png");
-            background-repeat: no-repeat; }
+            background-image: url("../images/card-bg-egames.png"); }
           .landing-page section .card-grid .card .card-content .card-art#workshops {
-            background-image: url("../images/card-bg-workshop.png");
-            background-repeat: no-repeat; }
+            background-image: url("../images/card-bg-workshop.png"); }
           .landing-page section .card-grid .card .card-content .card-art#screenings {
-            background-image: url("../images/card-bg-film.png");
-            background-repeat: no-repeat; }
+            background-image: url("../images/card-bg-film.png"); }
           .landing-page section .card-grid .card .card-content .card-art#seminars {
-            background-image: url("../images/card-bg-seminar.png");
-            background-repeat: no-repeat; }
+            background-image: url("../images/card-bg-seminar.png"); }
           .landing-page section .card-grid .card .card-content .card-art#minihobby {
-            background-image: url("../images/card-bg-minihobby.png");
-            background-repeat: no-repeat; }
+            background-image: url("../images/card-bg-minihobby.png"); }
           .landing-page section .card-grid .card .card-content .card-art#kid {
-            background-image: url("../images/card-bg-kid.png");
-            background-repeat: no-repeat; }
+            background-image: url("../images/card-bg-kid.png"); }
           .landing-page section .card-grid .card .card-content .card-art#entertainment {
-            background-image: url("../images/card-bg-entertainment.png");
-            background-repeat: no-repeat; }
+            background-image: url("../images/card-bg-entertainment.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#artshow {
+            background-image: url("../images/card-bg-artshow.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#authorsave {
+            background-image: url("../images/card-bg-authorsave.png"); }
           .landing-page section .card-grid .card .card-content .card-art#anime {
             background-image: url("../images/card-bg-anime.png"); }
           .landing-page section .card-grid .card .card-content .card-art#trade {
@@ -2191,10 +2183,6 @@ Content card styling
             background-image: url("../images/card-bg-feph.png"); }
           .landing-page section .card-grid .card .card-content .card-art#georgia {
             background-image: url("../images/card-bg-georgia.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#artshow {
-            background-image: url("../images/card-bg-artshow.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#authorsave {
-            background-image: url("../images/card-bg-authorsave.png"); }
       .landing-page section .card-grid .card .card-title-plate {
         background: #333;
         border-radius: 0 5px 5px 0;
@@ -2236,9 +2224,10 @@ Content card styling
       top: 12px; }
     .landing-page section .card.cardback .card-shine-x {
       top: -6px;
-      width: 300px; }
+      width: 365px; }
     .landing-page section .card.cardback .card-shine-y {
-      top: -6px; }
+      top: -4px;
+      height: 554px; }
     .landing-page section .card.cardback .event-type {
       top: 0em; }
     .landing-page section .card.cardback .card-content {

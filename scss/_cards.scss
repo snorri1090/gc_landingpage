@@ -56,10 +56,10 @@ Content card styling
 
       .card-shine-x {
         border-radius: 3px 2px 0 0;
-        left: 5px;
+        left: -2px;
         top: -6px;
-        height: 3px;
-        width: 310px;
+        height: 2px;
+        width: 317px;
         background: -moz-linear-gradient(top, rgba(255,255,255,.2) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
         background: -webkit-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to bottom, rgba(255,255,255,.2) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -68,9 +68,9 @@ Content card styling
 
       .card-shine-y {
         border-radius: 5px 0 0 5px;
-        left: -5px;
-        top: 5px;
-        height: 200px;
+        left: -6px;
+        top: -4px;
+        height: 210px;
         width: 2px;
         background: -moz-linear-gradient(left, rgba(255,255,255,.3) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
         background: -webkit-linear-gradient(left, rgba(255,255,255,.3) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -79,8 +79,6 @@ Content card styling
       }
 
       .event-type {
-        // box-shadow: -2px 0 5px rgba(0, 0, 0, .5);
-        // border: 1px solid #000;
         background-image: url('../images/event-type-icons-bg.png');
         background-size: cover;
         background-repeat: no-repeat;
@@ -89,7 +87,6 @@ Content card styling
         left: 2px;
         width: 45px;
         height: 45px;
-        //background-color: #aaa;
         z-index: 2;
         padding-top: .2em;
 
@@ -116,54 +113,57 @@ Content card styling
           background-size: cover;
           background-repeat: no-repeat;
 
+          // background images for small cards
+
+          // games
           &#boardgames {
             background-image: url('../images/card-bg-boardgames.png');
-            background-repeat: no-repeat;
           }
           &#ccg {
             background-image: url('../images/card-bg-ccg.png');
-            background-repeat: no-repeat;
           }
           &#minis{
             background-image: url('../images/card-bg-minis.png');
-            background-repeat: no-repeat;
           }
           &#rpg{
             background-image: url('../images/card-bg-rpg.png');
-            background-repeat: no-repeat;
           }
           &#larp{
             background-image: url('../images/card-bg-larp.png');
-            background-repeat: no-repeat;
           }
           &#egames{
             background-image: url('../images/card-bg-egames.png');
-            background-repeat: no-repeat;
           }
+
+          // more than games
           &#workshops {
             background-image: url('../images/card-bg-workshop.png');
-            background-repeat: no-repeat;
           }
           &#screenings {
             background-image: url('../images/card-bg-film.png');
-            background-repeat: no-repeat;
           }
           &#seminars{
             background-image: url('../images/card-bg-seminar.png');
-            background-repeat: no-repeat;
           }
           &#minihobby{
             background-image: url('../images/card-bg-minihobby.png');
-            background-repeat: no-repeat;
           }
           &#kid{
             background-image: url('../images/card-bg-kid.png');
-            background-repeat: no-repeat;
           }
           &#entertainment {
             background-image: url('../images/card-bg-entertainment.png');
-            background-repeat: no-repeat;
           }
+
+          // exhibit hall
+          &#artshow {
+            background-image: url('../images/card-bg-artshow.png');
+          }
+          &#authorsave {
+            background-image: url('../images/card-bg-authorsave.png');
+          }
+
+          // other stuff to do
           &#anime {
             background-image: url('../images/card-bg-anime.png');
           }
@@ -190,12 +190,6 @@ Content card styling
           }
           &#georgia {
             background-image: url('../images/card-bg-georgia.png');
-          }
-          &#artshow {
-            background-image: url('../images/card-bg-artshow.png');
-          }
-          &#authorsave {
-            background-image: url('../images/card-bg-authorsave.png');
           }
         }
       }
@@ -261,11 +255,12 @@ Content card styling
 
     .card-shine-x {
       top: -6px;
-      width: 300px;
+      width: 365px;
     }
 
     .card-shine-y {
-      top: -6px;
+      top: -4px;
+      height: 554px;
     }
 
     .event-type {
