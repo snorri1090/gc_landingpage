@@ -2191,6 +2191,10 @@ Content card styling
             background-image: url("../images/card-bg-feph.png"); }
           .landing-page section .card-grid .card .card-content .card-art#georgia {
             background-image: url("../images/card-bg-georgia.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#artshow {
+            background-image: url("../images/card-bg-artshow.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#authorsave {
+            background-image: url("../images/card-bg-authorsave.png"); }
       .landing-page section .card-grid .card .card-title-plate {
         background: #333;
         border-radius: 0 5px 5px 0;
