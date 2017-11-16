@@ -20,6 +20,10 @@ Content card styling
     margin: 0 auto;
     text-align: center;
 
+    a .card:hover {
+        border: 2px solid #008bad;
+    }
+
     /*****************************************************
     card styling - need dynamic solution for card sizes
     *****************************************************/

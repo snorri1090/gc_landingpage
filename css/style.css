@@ -2055,6 +2055,8 @@ Content card styling
     /*****************************************************
     card styling - need dynamic solution for card sizes
     *****************************************************/ }
+    .landing-page section .card-grid a .card:hover {
+      border: 2px solid #008bad; }
     .landing-page section .card-grid .card {
       background-color: #333;
       border-radius: 7px;
