@@ -2153,6 +2153,12 @@ Landing Page styling
       .landing-page footer#landing-page-footer .site-map .site-area {
         width: 19%;
         float: left; }
+        .landing-page footer#landing-page-footer .site-map .site-area.gencon-links {
+          width: 23%; }
+        .landing-page footer#landing-page-footer .site-map .site-area.copyright {
+          width: 76%;
+          position: relative;
+          top: -108px; }
         .landing-page footer#landing-page-footer .site-map .site-area:first-child {
           margin-left: 20px; }
         .landing-page footer#landing-page-footer .site-map .site-area h2 {
@@ -2289,6 +2295,20 @@ Styling for small
     padding: 0 13px; }
 
   .landing-page section h1 {
-    font-size: 1.5em; } }
+    font-size: 1.5em; }
+
+  .landing-page footer#landing-page-footer .site-map .site-area {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+
+  .landing-page footer#landing-page-footer .site-map .site-area:first-child {
+    margin-left: 0; }
+
+  .landing-page footer#landing-page-footer .site-map.gencon-links {
+    width: 100%; }
+
+  .landing-page footer#landing-page-footer .site-map.copyright {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

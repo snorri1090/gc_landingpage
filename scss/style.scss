@@ -341,6 +341,16 @@ Landing Page styling
       .site-area {
         width: 19%;
         float: left;
+        &.gencon-links {
+          width: 23%;
+        }
+
+        &.copyright {
+          width: 76%;
+          position: relative;
+          top: -108px;
+        }
+
         &:first-child {
           margin-left: 20px;
         }
@@ -526,5 +536,23 @@ Styling for small
 
   .landing-page section h1 {
     font-size: 1.5em;
+  }
+
+  .landing-page footer#landing-page-footer .site-map .site-area {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .landing-page footer#landing-page-footer .site-map .site-area:first-child {
+    margin-left: 0;
+  }
+
+  .landing-page footer#landing-page-footer .site-map.gencon-links {
+    width: 100%;
+  }
+
+  .landing-page footer#landing-page-footer .site-map.copyright {
+    display: none;
   }
 }
