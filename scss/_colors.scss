@@ -49,6 +49,12 @@ $comp-forest:                 #187425;
 $color--card-border:          #333;
 $color--event-type-bg:        #179fe2;
 
+$color--shine:                linear-gradient(left, rgba(255,255,255,.3) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+$color--shine--moz:           -moz-linear-gradient(left, rgba(255,255,255,.3) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+$color--shine--webkit:        -webkit-linear-gradient(left, rgba(255,255,255,.3) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+$color--shine--filter:        progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+
 /****************************************************/
 
 $color--wrapper:              $rich-black;

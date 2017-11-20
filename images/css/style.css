@@ -8,12 +8,6 @@
   width: 100vw;
   z-index: 1; }
 
-/*****************************************************
-New css variables
-*****************************************************/
-/*****************************************************
-Import CSS
-*****************************************************/
 @font-face {
   font-family: 'proxima_nova_altblack';
   src: url("../fonts/Proxima Nova Alt Black-webfont.eot");
@@ -64,10 +58,6 @@ import Gen Con font
 2018 Colors
 
 ********************************************************/
-/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-/* FF3.6-15 */
-/* Chrome10-25,Safari5.1-6 */
-/* IE6-9 */
 /****************************************************/
 /*********************************************
 class selectors for Font Awesome
@@ -1696,238 +1686,8 @@ Icon font reference selectors
   content: "\e602"; }
 
 /*****************************************************
-Content card styling
+New css variables
 *****************************************************/
-.landing-page section {
-  /*****************************************************
-  cards container div
-  *****************************************************/
-  /*****************************************************
-  card pop-up styling
-    styling overrides for card and content
-  *****************************************************/
-  /*****************************************************
-  card popup article styling
-  *****************************************************/ }
-  .landing-page section .cards {
-    background-color: #471008;
-    background-image: url("../images/red-cloud-bg-dk.jpg");
-    background-size: 100%;
-    background-position-y: -600px;
-    background-repeat: no-repeat; }
-  .landing-page section .card-grid {
-    margin: 0 auto;
-    text-align: center;
-    /*****************************************************
-    card styling - need dynamic solution for card sizes
-    *****************************************************/ }
-    .landing-page section .card-grid a .card:hover {
-      border: 2px solid #008bad; }
-    .landing-page section .card-grid .card {
-      background-color: #333;
-      border-radius: 7px;
-      color: #fff;
-      display: inline-block;
-      margin: 10px;
-      box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
-      transition: all .2s ease-in-out;
-      width: 325px;
-      height: 216px;
-      vertical-align: top;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      border: 2px solid transparent; }
-      .landing-page section .card-grid .card.card-hover {
-        border: 2px solid #008bad; }
-      .landing-page section .card-grid .card .card-shine-x,
-      .landing-page section .card-grid .card .card-shine-y {
-        position: absolute; }
-      .landing-page section .card-grid .card .card-shine-x {
-        border-radius: 3px 2px 0 0;
-        left: -2px;
-        top: -6px;
-        height: 2px;
-        width: 317px;
-        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
-        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
-        background: linear-gradient(left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); }
-      .landing-page section .card-grid .card .card-shine-y {
-        border-radius: 5px 0 0 5px;
-        left: -6px;
-        top: -4px;
-        height: 210px;
-        width: 2px;
-        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
-        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
-        background: linear-gradient(left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); }
-      .landing-page section .card-grid .card .event-type {
-        background-image: url("../images/event-type-icons-bg.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 2px;
-        left: 2px;
-        width: 45px;
-        height: 45px;
-        z-index: 2;
-        padding-top: .2em; }
-        .landing-page section .card-grid .card .event-type img {
-          width: 75%;
-          position: relative;
-          top: 3px; }
-      .landing-page section .card-grid .card .card-content {
-        background-repeat: no-repeat;
-        background-size: 100%;
-        border-bottom: 2px solid #222;
-        border-radius: 5px;
-        height: calc(100% - 10px);
-        margin: 5px;
-        position: relative; }
-        .landing-page section .card-grid .card .card-content .card-art {
-          position: absolute;
-          height: 100%;
-          width: 100%;
-          background-size: cover;
-          background-repeat: no-repeat;
-          /***************************************************
-           background images for small cards
-          ***************************************************/ }
-          .landing-page section .card-grid .card .card-content .card-art#boardgames {
-            background-image: url("../images/card-bg-boardgames.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#ccg {
-            background-image: url("../images/card-bg-ccg.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#minis {
-            background-image: url("../images/card-bg-minis.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#rpg {
-            background-image: url("../images/card-bg-rpg.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#larp {
-            background-image: url("../images/card-bg-larp.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#egames {
-            background-image: url("../images/card-bg-egames.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#workshops {
-            background-image: url("../images/card-bg-workshop.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#screenings {
-            background-image: url("../images/card-bg-film.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#seminars {
-            background-image: url("../images/card-bg-seminar.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#minihobby {
-            background-image: url("../images/card-bg-minihobby.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#kid {
-            background-image: url("../images/card-bg-kid.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#entertainment {
-            background-image: url("../images/card-bg-entertainment.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#artshow {
-            background-image: url("../images/card-bg-artshow.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#authorsave {
-            background-image: url("../images/card-bg-authorsave.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#anime {
-            background-image: url("../images/card-bg-anime.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#trade {
-            background-image: url("../images/card-bg-trade.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#iinsiders {
-            background-image: url("../images/card-bg-iinsider.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#wsymp {
-            background-image: url("../images/card-bg-wsymp.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#supact {
-            background-image: url("../images/card-bg-special.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#charity {
-            background-image: url("../images/card-bg-charity.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#cosplay {
-            background-image: url("../images/card-bg-cosplay.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#feph {
-            background-image: url("../images/card-bg-feph.png"); }
-          .landing-page section .card-grid .card .card-content .card-art#georgia {
-            background-image: url("../images/card-bg-georgia.png"); }
-      .landing-page section .card-grid .card .card-title-plate {
-        background: #333;
-        border-radius: 0 5px 5px 0;
-        position: absolute;
-        right: 5px;
-        top: 12px;
-        margin: 0 auto;
-        width: 262px;
-        height: 27px;
-        opacity: .7;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        border-right: 1px solid rgba(255, 255, 255, 0.3);
-        border-top: 1px solid rgba(255, 255, 255, 0.3);
-        float: right; }
-        .landing-page section .card-grid .card .card-title-plate.no-hex {
-          border-radius: 5px;
-          width: 302px; }
-      .landing-page section .card-grid .card .card-title {
-        color: white;
-        font-family: proxima_nova_altbold, Tahoma, sans-serif;
-        font-size: 17px;
-        text-shadow: 3px 3px 10px black;
-        position: absolute;
-        top: 11px;
-        left: 54px; }
-        .landing-page section .card-grid .card .card-title.no-hex {
-          left: 12px; }
-  .landing-page section .card.cardback {
-    width: 375px;
-    height: 561px;
-    transition: all .2s ease-in-out; }
-    .landing-page section .card.cardback .card-title-plate {
-      height: 27px;
-      top: 10px;
-      width: 312px; }
-    .landing-page section .card.cardback .card-title {
-      margin: 0px;
-      position: absolute;
-      top: 12px; }
-    .landing-page section .card.cardback .card-shine-x {
-      top: -6px;
-      width: 365px; }
-    .landing-page section .card.cardback .card-shine-y {
-      top: -4px;
-      height: 554px; }
-    .landing-page section .card.cardback .event-type {
-      top: 0em; }
-    .landing-page section .card.cardback .card-content {
-      height: 98%;
-      position: relative;
-      border-bottom: none;
-      background: url("../images/card-popup-bg-tile-dk.jpg");
-      background-repeat: repeat; }
-      .landing-page section .card.cardback .card-content .close-button {
-        color: white;
-        position: absolute;
-        float: right;
-        right: 0px;
-        top: -3px;
-        z-index: 1000; }
-        .landing-page section .card.cardback .card-content .close-button:hover {
-          color: #ccc;
-          text-decoration: none; }
-        .landing-page section .card.cardback .card-content .close-button i {
-          font-size: 1em; }
-  .landing-page section article.card-popup-content h1 {
-    color: white;
-    font-family: proxima_nova_altbold, Tahoma, sans-serif;
-    font-size: 18px;
-    position: absolute;
-    text-shadow: 3px 3px 10px black;
-    width: 100%;
-    top: -1.7em;
-    margin-left: 0;
-    margin-right: 0; }
-  .landing-page section article.card-popup-content .card-popup-img {
-    overflow: hidden;
-    width: 100%; }
-    .landing-page section article.card-popup-content .card-popup-img img {
-      max-height: 250px;
-      width: 100%; }
-  .landing-page section article.card-popup-content p {
-    font-size: 16px;
-    color: #fff;
-    padding: 1em .3em 0 .3em;
-    text-align: left; }
-
 /*****************************************************
 Landing Page styling
 *****************************************************/
@@ -2148,7 +1908,7 @@ Landing Page styling
         .landing-page footer#landing-page-footer .site-map .site-area:first-child {
           margin-left: 20px; }
         .landing-page footer#landing-page-footer .site-map .site-area h2 {
-          font-size: 26px;
+          font-size: 30px;
           text-transform: uppercase;
           margin-bottom: -0.3em;
           color: #fff; }
@@ -2159,16 +1919,35 @@ Landing Page styling
           padding-left: 0; }
         .landing-page footer#landing-page-footer .site-map .site-area ul li {
           font-size: 13px; }
-          .landing-page footer#landing-page-footer .site-map .site-area ul li a {
-            color: white;
-            text-decoration: none; }
-            .landing-page footer#landing-page-footer .site-map .site-area ul li a:hover {
-              text-decoration: underline; }
-            .landing-page footer#landing-page-footer .site-map .site-area ul li a:hover, .landing-page footer#landing-page-footer .site-map .site-area ul li a:visited, .landing-page footer#landing-page-footer .site-map .site-area ul li a:active {
-              color: white; }
 
 /*****************************************************
-Gen Con specific classes: remove prior to integration
+Helper classes to be replaced with Gen Con classes
+*****************************************************/
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+/*****************************************************
+Gen Con specific classes
 *****************************************************/
 button .button, .button, input[type="button"], input[type="submit"], a.button {
   cursor: pointer;
@@ -2249,5 +2028,246 @@ button:hover, button:focus, .button:hover, .button:focus, a.button:hover, input[
   border: solid 1px #1a0604;
   box-shadow: inset 0 0 0 1px #c6da7b;
   color: #fff !important; }
+
+/*****************************************************
+Content card styling
+*****************************************************/
+.landing-page section {
+  /*****************************************************
+  cards container div
+  *****************************************************/
+  /*****************************************************
+  card pop-up styling
+    styling overrides for card and content
+  *****************************************************/
+  /*****************************************************
+  card popup article styling
+  *****************************************************/ }
+  .landing-page section .cards {
+    background-color: #471008;
+    background-image: url("../images/red-cloud-bg-dk.jpg");
+    background-size: 100%;
+    background-position-y: -600px;
+    background-repeat: no-repeat; }
+  .landing-page section .card-grid {
+    margin: 0 auto;
+    text-align: center;
+    /*****************************************************
+    card styling - need dynamic solution for card sizes
+    *****************************************************/ }
+    .landing-page section .card-grid a .card:hover {
+      border: 2px solid #008bad; }
+    .landing-page section .card-grid .card {
+      background-color: #333;
+      border-radius: 7px;
+      color: #fff;
+      display: inline-block;
+      margin: 10px;
+      box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
+      transition: all .2s ease-in-out;
+      width: 325px;
+      height: 216px;
+      vertical-align: top;
+      -webkit-box-sizing: border-box;
+      /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box;
+      /* Firefox, other Gecko */
+      box-sizing: border-box;
+      /* Opera/IE 8+ */
+      border: 2px solid transparent; }
+      .landing-page section .card-grid .card.card-hover {
+        border: 2px solid #008bad; }
+      .landing-page section .card-grid .card .card-shine-x,
+      .landing-page section .card-grid .card .card-shine-y {
+        position: absolute; }
+      .landing-page section .card-grid .card .card-shine-x {
+        border-radius: 3px 2px 0 0;
+        left: -2px;
+        top: -6px;
+        height: 2px;
+        width: 317px;
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+        /* IE6-9 */ }
+      .landing-page section .card-grid .card .card-shine-y {
+        border-radius: 5px 0 0 5px;
+        left: -6px;
+        top: -4px;
+        height: 210px;
+        width: 2px;
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+        /* IE6-9 */ }
+      .landing-page section .card-grid .card .event-type {
+        background-image: url("../images/event-type-icons-bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 45px;
+        height: 45px;
+        z-index: 2;
+        padding-top: .2em; }
+        .landing-page section .card-grid .card .event-type img {
+          width: 75%;
+          position: relative;
+          top: 3px; }
+      .landing-page section .card-grid .card .card-content {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-bottom: 2px solid #222;
+        border-radius: 5px;
+        height: calc(100% - 10px);
+        margin: 5px;
+        position: relative; }
+        .landing-page section .card-grid .card .card-content .card-art {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          background-size: cover;
+          background-repeat: no-repeat; }
+          .landing-page section .card-grid .card .card-content .card-art#boardgames {
+            background-image: url("../images/card-bg-boardgames.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#ccg {
+            background-image: url("../images/card-bg-ccg.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#minis {
+            background-image: url("../images/card-bg-minis.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#rpg {
+            background-image: url("../images/card-bg-rpg.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#larp {
+            background-image: url("../images/card-bg-larp.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#egames {
+            background-image: url("../images/card-bg-egames.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#workshops {
+            background-image: url("../images/card-bg-workshop.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#screenings {
+            background-image: url("../images/card-bg-film.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#seminars {
+            background-image: url("../images/card-bg-seminar.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#minihobby {
+            background-image: url("../images/card-bg-minihobby.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#kid {
+            background-image: url("../images/card-bg-kid.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#entertainment {
+            background-image: url("../images/card-bg-entertainment.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#artshow {
+            background-image: url("../images/card-bg-artshow.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#authorsave {
+            background-image: url("../images/card-bg-authorsave.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#anime {
+            background-image: url("../images/card-bg-anime.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#trade {
+            background-image: url("../images/card-bg-trade.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#iinsiders {
+            background-image: url("../images/card-bg-iinsider.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#wsymp {
+            background-image: url("../images/card-bg-wsymp.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#supact {
+            background-image: url("../images/card-bg-special.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#charity {
+            background-image: url("../images/card-bg-charity.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#cosplay {
+            background-image: url("../images/card-bg-cosplay.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#feph {
+            background-image: url("../images/card-bg-feph.png"); }
+          .landing-page section .card-grid .card .card-content .card-art#georgia {
+            background-image: url("../images/card-bg-georgia.png"); }
+      .landing-page section .card-grid .card .card-title-plate {
+        background: #333;
+        border-radius: 0 5px 5px 0;
+        position: absolute;
+        right: 5px;
+        top: 12px;
+        margin: 0 auto;
+        width: 262px;
+        height: 27px;
+        opacity: .7;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        float: right; }
+        .landing-page section .card-grid .card .card-title-plate.no-hex {
+          border-radius: 5px;
+          width: 302px; }
+      .landing-page section .card-grid .card .card-title {
+        color: white;
+        font-family: proxima_nova_altbold, Tahoma, sans-serif;
+        font-size: 17px;
+        text-shadow: 3px 3px 10px black;
+        position: absolute;
+        top: 11px;
+        left: 54px; }
+        .landing-page section .card-grid .card .card-title.no-hex {
+          left: 12px; }
+  .landing-page section .card.cardback {
+    width: 375px;
+    height: 561px;
+    transition: all .2s ease-in-out; }
+    .landing-page section .card.cardback .card-title-plate {
+      height: 27px;
+      top: 10px;
+      width: 312px; }
+    .landing-page section .card.cardback .card-title {
+      margin: 0px;
+      position: absolute;
+      top: 12px; }
+    .landing-page section .card.cardback .card-shine-x {
+      top: -6px;
+      width: 365px; }
+    .landing-page section .card.cardback .card-shine-y {
+      top: -4px;
+      height: 554px; }
+    .landing-page section .card.cardback .event-type {
+      top: 0em; }
+    .landing-page section .card.cardback .card-content {
+      height: 98%;
+      position: relative;
+      border-bottom: none;
+      background: url("../images/card-popup-bg-tile-dk.jpg");
+      background-repeat: repeat; }
+      .landing-page section .card.cardback .card-content .close-button {
+        color: white;
+        position: absolute;
+        float: right;
+        right: 0px;
+        top: -3px;
+        z-index: 1000; }
+        .landing-page section .card.cardback .card-content .close-button:hover {
+          color: #ccc;
+          text-decoration: none; }
+        .landing-page section .card.cardback .card-content .close-button i {
+          font-size: 1em; }
+  .landing-page section article.card-popup-content h1 {
+    color: white;
+    font-family: proxima_nova_altbold, Tahoma, sans-serif;
+    font-size: 18px;
+    position: absolute;
+    text-shadow: 3px 3px 10px black;
+    width: 100%;
+    top: -1.7em;
+    margin-left: 0;
+    margin-right: 0; }
+  .landing-page section article.card-popup-content .card-popup-img {
+    overflow: hidden;
+    width: 100%; }
+    .landing-page section article.card-popup-content .card-popup-img img {
+      max-height: 250px;
+      width: 100%; }
+  .landing-page section article.card-popup-content p {
+    font-size: 16px;
+    color: #fff;
+    padding: 1em .3em 0 .3em;
+    text-align: left; }
 
 /*# sourceMappingURL=style.css.map */

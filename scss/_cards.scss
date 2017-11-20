@@ -30,7 +30,6 @@ Content card styling
 
     .card {
       background-color: $color--card-border;
-
       border-radius: 7px;
       color: #fff;
       display: inline-block;
@@ -40,9 +39,9 @@ Content card styling
       width: 325px;
       height: 216px;
       vertical-align: top;
-      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-      -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-      box-sizing: border-box;         /* Opera/IE 8+ */
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
       border: 2px solid rgba(0, 0, 0, 0);
 
       &.card-hover {
@@ -60,10 +59,10 @@ Content card styling
         top: -6px;
         height: 2px;
         width: 317px;
-        background: -moz-linear-gradient(top, rgba(255,255,255,.2) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, rgba(255,255,255,.2) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+        background: $color--shine--moz;
+        background: $color--shine--webkit;
+        background: $color--shine;
+        filter: $color--shine--filter;
       }
 
       .card-shine-y {
@@ -72,10 +71,10 @@ Content card styling
         top: -4px;
         height: 210px;
         width: 2px;
-        background: -moz-linear-gradient(left, rgba(255,255,255,.3) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, rgba(255,255,255,.3) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(left, rgba(255,255,255,.3) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+        background: $color--shine--moz;
+        background: $color--shine--webkit;
+        background: $color--shine;
+        filter: $color--shine--filter;
       }
 
       .event-type {
@@ -113,7 +112,9 @@ Content card styling
           background-size: cover;
           background-repeat: no-repeat;
 
-          // background images for small cards
+          /***************************************************
+           background images for small cards
+          ***************************************************/
 
           // games
           &#boardgames {
