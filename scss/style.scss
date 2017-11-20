@@ -26,6 +26,7 @@ Import CSS
 @import "colors";
 @import "icons";
 @import "cards";
+@import "viewports";
 
 /*****************************************************
 Landing Page styling
@@ -133,6 +134,10 @@ Landing Page styling
         padding: 0;
         top: 0;
         left: 0;
+        background-image: url('../images/splash-background-tmp.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -240px;
 
         video {
           min-width: 100%;
@@ -473,3 +478,45 @@ button:hover, button:focus, .button:hover, .button:focus, a.button:hover, input[
     box-shadow: inset 0 0 0 1px $button--color-box-shadow;
     color: #fff !important;
   }
+
+
+/********************************************************
+
+Responsive Styling
+
+********************************************************/
+
+/********************************************************
+Styling for xl
+********************************************************/
+
+@media only screen and (min-width: $viewport--xlarge) {
+
+}
+
+/********************************************************
+Styling for large
+********************************************************/
+
+@media only screen and (max-width: $viewport--large) {
+  .landing-page section.splash .bg-video {
+    background-position-y: 0px;
+  }
+}
+
+/********************************************************
+Styling for medium
+********************************************************/
+@media only screen and (min-width: $viewport--medium) {
+
+}
+
+/********************************************************
+Styling for small
+********************************************************/
+
+@media only screen and (min-width: $viewport--small) {
+  .card-grid {
+    padding: 0 13px;
+  }
+}

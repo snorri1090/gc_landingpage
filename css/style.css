@@ -1928,6 +1928,11 @@ Content card styling
     padding: 1em .3em 0 .3em;
     text-align: left; }
 
+/***************************************************
+
+Media Query variables
+
+***************************************************/
 /*****************************************************
 Landing Page styling
 *****************************************************/
@@ -2008,7 +2013,11 @@ Landing Page styling
         margin: 0;
         padding: 0;
         top: 0;
-        left: 0; }
+        left: 0;
+        background-image: url("../images/splash-background-tmp.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -240px; }
         .landing-page section.splash .bg-video video {
           min-width: 100%;
           min-height: 550px;
@@ -2249,5 +2258,29 @@ button:hover, button:focus, .button:hover, .button:focus, a.button:hover, input[
   border: solid 1px #1a0604;
   box-shadow: inset 0 0 0 1px #c6da7b;
   color: #fff !important; }
+
+/********************************************************
+
+Responsive Styling
+
+********************************************************/
+/********************************************************
+Styling for xl
+********************************************************/
+/********************************************************
+Styling for large
+********************************************************/
+@media only screen and (max-width: 1224px) {
+  .landing-page section.splash .bg-video {
+    background-position-y: 0px; } }
+/********************************************************
+Styling for medium
+********************************************************/
+/********************************************************
+Styling for small
+********************************************************/
+@media only screen and (min-width: 736px) {
+  .card-grid {
+    padding: 0 13px; } }
 
 /*# sourceMappingURL=style.css.map */
