@@ -1986,10 +1986,9 @@ Landing Page styling
         text-decoration: underline; }
     .landing-page section.cards {
       background-color: #471008;
-      background-image: url("../images/red-cloud-bg-dk.jpg");
+      background-image: url("../images/red-cloud-bg-tiled.jpg");
       background-size: 100%;
-      background-position-y: -600px;
-      background-repeat: no-repeat; }
+      background-position-y: -600px; }
       .landing-page section.cards h1,
       .landing-page section.cards h2 {
         color: #fff; }
