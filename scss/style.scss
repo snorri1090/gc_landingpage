@@ -506,16 +506,25 @@ Styling for large
 /********************************************************
 Styling for medium
 ********************************************************/
-@media only screen and (min-width: $viewport--medium) {
-
+@media only screen and (max-width: $viewport--medium) {
+  .landing-page section h1 {
+    font-size: 2em;
+  }
+  .landing-page section h2 {
+    top: 0;
+  }
 }
 
 /********************************************************
 Styling for small
 ********************************************************/
 
-@media only screen and (min-width: $viewport--small) {
+@media only screen and (max-width: $viewport--small) {
   .card-grid {
     padding: 0 13px;
+  }
+
+  .landing-page section h1 {
+    font-size: 1.5em;
   }
 }
